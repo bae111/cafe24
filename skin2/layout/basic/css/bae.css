@@ -1,0 +1,136 @@
+/*공통클래스*/
+html,body{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/*레이아웃*/
+#header,
+#header:before,
+#header:after{
+    position: relative;
+    border: 0;
+}
+
+#header .inner{
+    width: 1440px;
+
+}
+#header .inner:after,
+#header .topArea:after,
+#container:after{
+    display: none;
+}
+#header .topArea{
+    /* height: 82px; */
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header #category.xans-layout-category{
+    margin-bottom: 0;
+    width: 60%;
+}
+#header .topArea .xans-layout-category .position > ul{
+    display: flex;
+    justify-content: space-around;
+}
+#header .topArea .xans-layout-category .position > ul > li{
+    position: relative;
+    z-index: 10;
+}
+#header .topArea .xans-layout-category .position > ul > li > a{
+    text-align: center;
+    padding: 1rem 2rem;
+}
+#header #category.xans-layout-category .sub-category {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 0;
+    background: #fff;
+}
+
+
+#header .inner .topArea .xans-element-.xans-layout.xans-layout-logotop{
+    width: 100px;
+    margin: 0;
+}
+
+.util-menu{
+    display: flex;
+    align-items: center;
+}
+.xans-element-.xans-layout.xans-layout-searchheader {
+    float: none;
+    margin: 0;
+}
+.xans-element-.xans-layout.xans-layout-searchheader #keyword{
+    display: none;
+}
+
+#contents{
+    float: none;
+    width: 1440px;
+}
+
+
+
+#wrap{
+    width: 100%;
+    margin: 0;
+}
+#container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/*메인섹션타이틀*/
+.ec-base-product .title h2{
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+}
+
+/*1번 베스트상품*/
+
+.best-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.best-swiper  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-swiper  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ec-base-product .title{
+    display: none;
+}
+.selection-tab #sele-tab .nav-item .nav-link{
+
+    color: #000;
+}
+.selection-tab #sele-tab .nav-link.active{
+    border-bottom: solid 1px #a4a4a4;
+    box-sizing: border-box;
+}
+.selection-tab .tab-content .tab-pane.active{
+    display: flex;
+    justify-content: space-between;
+}
