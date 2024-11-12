@@ -1,3 +1,15 @@
+$(function(){
+    $(window).on('scroll', function(){
+        if($(window).scrollTop() > 0){
+            $('#header').addClass('fix');
+
+        }else{
+            $('#header').removeClass('fix');
+
+        }
+    });
+})
+
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.nav-link');
     const tabContents = document.querySelectorAll('.tab-pane');
@@ -32,6 +44,6 @@ var swiper = new Swiper(".best-swiper", {
     spaceBetween: 10,
     scrollbar: {
         el: ".swiper-scrollbar",
-      },
-  });
+    },
+});
 

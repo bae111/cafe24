@@ -10,7 +10,9 @@
                 <!--@css(/css/module/layout/category.css)-->
                 <!--@js(/js/module/layout/category.js)-->
                 <div class="position">
-                    <ul>
+                    <ul class="category_depth">
+                        <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                        <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
                         <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
                         <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
                         <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
@@ -27,29 +29,26 @@
                     -->
                     <fieldset>
                         <legend>검색</legend>
-                        {$form.keyword}<input type="image" src="//img.echosting.cafe24.com/skin/base/layout/btn_search.gif" alt="검색" onclick="{$action_search_submit}" /><ul class="autoDrop" id="{$search_auto_id}"></ul>
+                        {$form.keyword}<input type="image" src="/layout/img/icon/search-icon.svg" alt="검색" onclick="{$action_search_submit}" /><ul class="autoDrop" id="{$search_auto_id}"></ul>
                     </fieldset>
                 </div>
                 <div module="Layout_statelogoff">
                     <!--@css(/css/module/layout/statelogoff.css)-->
                     <!-- <a href="#" class="log header-login-btn">로그인</a>
                     <a href="/member/join.html">회원가입</a> -->
-                    <a href="/order/basket.html">장바구니 <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
-                    <!-- <a href="/myshop/order/list.html">주문조회</a> -->
-                    <a href="/myshop/index.html">마이쇼핑</a>
+                    <a href="/order/basket.html"><img src="/layout/img/icon/cart-icon.svg" alt="장바구니"><!-- <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a> --><!-- <a href="/myshop/order/list.html">주문조회</a> --><a href="/myshop/index.html"><img src="/layout/img/icon/mypage-icon.svg" alt="마이페이지"></a>
                     <!-- <a class="{$board_display|display}" href="/board/index.html">게시판</a> -->
                 </div>
                 <div module="Layout_stateLogon">
                     <!--@css(/css/module/layout/statelogon.css)-->
                     <!-- <span class="myinfo"><strong>{$name}</strong>님 환영합니다. <a href="/member/modify.html">회원정보수정</a></span> -->
                     <!-- <a href="{$action_logout}" class="log">로그아웃</a> -->
-                    <a href="/order/basket.html">장바구니 <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
-                    <!-- <a href="/myshop/order/list.html">주문조회</a> -->
-                    <a href="/myshop/index.html">마이쇼핑</a>
+                    <a href="/order/basket.html"><img src="/layout/img/icon/cart-icon.svg" alt="장바구니"><!-- <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a> --><!-- <a href="/myshop/order/list.html">주문조회</a> --><a href="/myshop/index.html"><img src="/layout/img/icon/mypage-icon.svg" alt="마이페이지"></a>
                     <!-- <a class="{$board_display|display}" href="/board/index.html">게시판</a> -->
                 </div>
             </div>
 
+            <div class="header-bg"></div>
 
         </div>
     
@@ -109,4 +108,6 @@
             <a module="Layout_shortcut" href="/link/shortcut.html" target="_blank" onclick="winPop(this.href); return false;">바로가기</a>
         </div> -->
     </div>
+
+    
 </div>
