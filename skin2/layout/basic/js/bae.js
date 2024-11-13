@@ -8,6 +8,7 @@ $(function(){
 
         }
     });
+
 })
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -37,13 +38,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+var main_banner_swiper = new Swiper(".main-banner-swiper", {
+    // autoplay: {
+    //     delay: 3000
+    // },
+    loop: true
+});
 
 
-var swiper = new Swiper(".best-swiper", {
+var best_swiper = new Swiper(".best-swiper", {
     slidesPerView: 4,
     spaceBetween: 10,
     scrollbar: {
         el: ".swiper-scrollbar",
     },
+});
+
+
+var new_swiper = new Swiper(".new-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true
 });
 
