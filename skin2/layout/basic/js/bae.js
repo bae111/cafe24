@@ -48,16 +48,28 @@ var main_banner_swiper = new Swiper(".main-banner-swiper", {
 
 var best_swiper = new Swiper(".best-swiper", {
     slidesPerView: 4,
-    spaceBetween: 10,
+    spaceBetween: 40,
     scrollbar: {
         el: ".swiper-scrollbar",
     },
+    loop: true
 });
 
 
 var new_swiper = new Swiper(".new-swiper", {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true
+});
+
+var middle_swiper = new Swiper(".middle-banner-swiper", {
+        // autoplay: {
+    //     delay: 3000
+    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
