@@ -290,12 +290,14 @@ a:hover{
     display: flex;
     flex-direction: column;
     gap: 4px;
+    padding: 0;
 }
 /*상품 리스트 전체*/
 .ec-base-product .prdList{
     margin: 0;
 }
-.ec-base-product .prdList .description span{
+.ec-base-product .prdList .description .name span,
+.ec-base-product .prdList .description ul li:first-child span{
     display: -webkit-box;
     word-wrap: break-word;
     -webkit-line-clamp: 1;
@@ -433,7 +435,6 @@ a:hover{
     justify-content: center;
 }
 .focus-section .focus-box .ec-base-product ul.grid2 li .description .focust-text{
-    display: block;
     margin-bottom: 2.5rem;
 }
 .focus-section .focus-box .ec-base-product ul.grid2 li .description .focus-item-text{
@@ -493,15 +494,15 @@ a:hover{
 .selection-tab .tab-content .prdList.grid2{
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 0.5rem;
 }
 
 .selection-tab .tab-content .prdList.grid2 > li{
-    width: 32%;
+    width: 35%;
 }
-.selection-tab .tab-content .ec-base-product ul.grid2 li .description
-.selection-tab .tab-content .ec-base-product ul.grid2 li .thumbnail{
-    width: 300px;
+.selection-tab .ec-base-product ul.grid2 li .description,
+.selection-tab .ec-base-product ul.grid2 li .thumbnail{
+    width: 220px;
 }
 .selection-tab .ec-base-product ul.grid2 li .description{
     float: none;
@@ -509,7 +510,7 @@ a:hover{
     padding: 0;
 }
 
-/*이벤트*/
+/*5번 이벤트*/
 .event-seciton{
     background: url(/layout/img/event-img.jpg) no-repeat center / cover;
     position: relative;
@@ -552,9 +553,16 @@ a:hover{
 }
 
 
-/*신상품*/
+/*6번 신상품*/
+.new-section{
+    position: relative;
+}
+.new-section .title{
+    display: none;
+}
 .new-swiper {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 .new-swiper .swiper-slide {
     display: flex;
@@ -564,6 +572,17 @@ a:hover{
 .new-swiper .swiper-wrapper .thumbnail,
 .new-swiper .ec-base-product ul.grid3 > li{
     width: 370px;
+}
+.new-swiper .swiper-wrapper .thumbnail .prdImg{
+    height: 370px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-swiper .swiper-wrapper .thumbnail .prdImg img{
+    max-width: 300px;
 }
 
 /*푸터*/

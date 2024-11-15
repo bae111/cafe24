@@ -63,7 +63,7 @@ var new_swiper = new Swiper(".new-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    loop: true
+    loop: true,
 });
 
 var middle_swiper = new Swiper(".middle-banner-swiper", {
