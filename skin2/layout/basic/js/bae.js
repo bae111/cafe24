@@ -2,10 +2,10 @@ $(function(){
     $(window).on('scroll', function(){
         if($(window).scrollTop() > 0){
             $('#header').addClass('fix');
-
+            $('#top-btn').addClass('show');
         }else{
             $('#header').removeClass('fix');
-
+            $('#top-btn').removeClass('show');
         }
     });
 
