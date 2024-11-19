@@ -9,6 +9,25 @@ $(function(){
         }
     });
 
+    // refurbishPer의 텍스트에서 % 문자만 추출하여 span 태그에 담기
+
+    const refurbishPer = document.querySelectorAll('#refurbish .salePer');
+
+    refurbishPer.forEach(element => {
+        const percentageText = element.textContent; // 텍스트 내용 가져오기
+        const percentageValue = parseFloat(percentageText); // 텍스트를 부동 소수점 숫자로 변환
+
+        if (!isNaN(percentageValue)) { // 변환이 성공했는지 확인
+            const percentSpan = document.createElement('span'); // 새로운 span 요소 생성
+            percentSpan.textContent = '%'; // span 요소에 % 문자 추가
+
+            // 기존 텍스트 노드를 대체하기 위해 span 요소로 교체
+            element.innerHTML = ''; // 기존 텍스트 삭제
+            element.appendChild(document.createTextNode(percentageValue)); // 숫자 텍스트 추가
+            element.appendChild(percentSpan); // % 문자 span 추가
+        }
+
+    });
 })
 
 document.addEventListener('DOMContentLoaded', function() {

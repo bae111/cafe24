@@ -384,6 +384,32 @@ a:hover{
 .ec-base-product .prdList > li{
     margin: 0 ;
 }
+/*메인 베스트 상품, 서브 베스트 상품 정렬*/
+.xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec,
+.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .xans-product-listitem{
+    gap: 0;
+    position: relative;
+}
+.xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:first-child span,
+.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:first-child span{
+    margin-bottom: 1rem;
+}
+.xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:last-child{
+    position: absolute;
+    top: 64%;
+    left: 16%;
+}
+.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:last-child{
+    position: absolute;
+    top: 64%;
+    left: 20%;
+}
+.xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:last-child .salePer,
+.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:last-child .salePer{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #d93333;
+}
 
 /*2번 포커스에디션*/
 .focus-section{
@@ -835,6 +861,11 @@ a:hover{
     margin: 0 .5rem 3.5rem;
 }
 
+.ec-base-paginate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .ec-base-paginate img{
     display: none;
 }
@@ -842,56 +873,56 @@ a:hover{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
 }
 .ec-base-paginate > a.first:before{
     margin-right: -1px;
     transform: rotate(-135deg);
-    content: "";
-    width: 5px;
-    height: 5px;
+    content: '';
+    width: 6px;
+    height: 6px;
     border-top: solid 1px #949494;
     border-right: solid 1px #949494;
 }
 .ec-base-paginate > a.first:after {
     transform: rotate(-135deg);
-    content: "";
-    width: 5px;
-    height: 5px;
+    content: '';
+    width: 6px;
+    height: 6px;
     border-top: solid 1px #949494;
     border-right: solid 1px #949494;
 }
 .ec-base-paginate > a:first-child:after, .ec-base-paginate > a:nth-child(2):after {
     transform: rotate(-135deg);
-    content: "";
-    width: 5px;
-    height: 5px;
+    content: '';
+    width: 6px;
+    height: 6px;
     border-top: solid 1px #949494;
     border-right: solid 1px #949494;
 }
 .ec-base-paginate > a:last-child:after, .ec-base-paginate > a:nth-last-child(2):after {
     transform: rotate(45deg);
-    content: "";
-    width: 5px;
-    height: 5px;
+    content: '';
+    width: 6px;
+    height: 6px;
     border-top: solid 1px #949494;
     border-right: solid 1px #949494;
 }
 .ec-base-paginate > a.last:before {
     transform: rotate(45deg);
-    content: "";
-    width: 5px;
-    height: 5px;
+    content: '';
+    width: 6px;
+    height: 6px;
     border-top: solid 1px #949494;
     border-right: solid 1px #949494;
 }
 .ec-base-paginate > a.last:after {
     margin-left: -1px;
     transform: rotate(45deg);
-    content: "";
-    width: 5px;
-    height: 5px;
+    content: '';
+    width: 6px;
+    height: 6px;
     border-top: solid 1px #949494;
     border-right: solid 1px #949494;
 }
@@ -904,4 +935,5 @@ a:hover{
 .ec-base-paginate li a.this{
     color: #000;
     border-bottom: solid 1px #000;
+    padding-bottom: 10px;
 }
