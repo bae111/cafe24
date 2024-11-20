@@ -33,7 +33,7 @@ a:hover{
     height: 40px;
     border-top: solid 1px #fff;
     border-right: solid 1px #fff;
-    transform: rotate(45deg);
+    transform: rotate(45deg) scale(0.7);
     right: 13%;
     left: auto;
     z-index: 10;
@@ -43,7 +43,7 @@ a:hover{
     height: 40px;
     border-top: solid 1px #fff;
     border-right: solid 1px #fff;
-    transform: rotate(-135deg);
+    transform: rotate(-135deg) scale(0.7);
     left: 13%;
     z-index: 10;
 }
@@ -52,7 +52,7 @@ a:hover{
     height: 40px;
     border-top: solid 1px #000;
     border-right: solid 1px #000;
-    transform: rotate(45deg);
+    transform: rotate(45deg) scale(0.7);
     right: 2%;
     left: auto;
     z-index: 10;
@@ -62,7 +62,7 @@ a:hover{
     height: 40px;
     border-top: solid 1px #000;
     border-right: solid 1px #000;
-    transform: rotate(-135deg);
+    transform: rotate(-135deg) scale(0.7);
     left: 2%;
     z-index: 10;
 }
@@ -216,23 +216,18 @@ a:hover{
 /*헤더 끝*/
 
 /*유틸메뉴*/
-.util-menu{
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-}
-.xans-element-.xans-layout.xans-layout-searchheader {
+.util-menu .xans-element-.xans-layout.xans-layout-searchheader {
     float: none;
     margin: 0;
 }
-.xans-element-.xans-layout.xans-layout-searchheader #keyword{
+.util-menu .xans-element-.xans-layout.xans-layout-searchheader #keyword{
     display: none;
 }
-.xans-element-.xans-layout.xans-layout-searchheader fieldset{
+.util-menu .xans-element-.xans-layout.xans-layout-searchheader fieldset{
     border: 0;
 }
-.xans-element-.xans-layout.xans-layout-statelogon,
-.xans-element-.xans-layout.xans-layout-statelogoff{
+.util-menu .xans-element-.xans-layout.xans-layout-statelogon,
+.util-menu .xans-element-.xans-layout.xans-layout-statelogoff{
     float: none;
     height: auto;
     display: flex;
@@ -240,8 +235,8 @@ a:hover{
     line-height: 0;
     gap: 1.25rem;
 }
-.xans-element-.xans-layout.xans-layout-statelogon a,
-.xans-element-.xans-layout.xans-layout-statelogoff a{
+.util-menu .xans-element-.xans-layout.xans-layout-statelogon a,
+.util-menu .xans-element-.xans-layout.xans-layout-statelogoff a{
     display: block;
     padding: 0;
     background: none;
@@ -302,6 +297,8 @@ a:hover{
     flex-direction: column;
     gap: 4px;
     padding: 0;
+    /*인라인블럭사용*/
+    text-align: left;
 }
 /*상품 리스트 전체*/
 .ec-base-product .prdList{
@@ -316,13 +313,14 @@ a:hover{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.xans-product-listitem{
+/*인라인블럭사용*/
+/* .xans-product-listitem{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
+} */
 /*상품 이미지*/
-.ec-base-product .prdList .thumbnail {
+.ec-base-product .prdList .thumbnail{
     margin: 0 0 1.25rem;
 }
 .ec-base-product ul.grid2 li .thumbnail{
@@ -390,20 +388,32 @@ a:hover{
     gap: 0;
     position: relative;
 }
+/*상품 설명 여백*/
+.ec-base-product .prdList .description ul li:first-child span,
 .xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:first-child span,
 .xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:first-child span{
     margin-bottom: 1rem;
 }
-.xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:last-child{
+/*인라인블럭사용*/
+.xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:nth-child(2),
+.xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:nth-child(3),
+.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:nth-child(2),
+.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:nth-child(3){
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+/*메인*/
+/* .xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:last-child{
     position: absolute;
     top: 64%;
     left: 16%;
-}
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:last-child{
+} */
+/*서브*/
+/* .xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:last-child{
     position: absolute;
     top: 64%;
     left: 20%;
-}
+} */
 .xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:last-child .salePer,
 .xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:last-child .salePer{
     font-size: 1rem;
@@ -648,7 +658,7 @@ a:hover{
     width: 350px;
 } */
 .new-swiper .swiper-wrapper .thumbnail .prdImg{
-    height: 350px;
+    /* height: 350px; */
     background-color: #f8f8f8;
     border-radius: 50%;
     display: flex;
@@ -656,7 +666,8 @@ a:hover{
     align-items: center;
 }
 .new-swiper .swiper-wrapper .thumbnail .prdImg img{
-    max-width: 300px;
+    /* max-width: 300px; */
+    transform: scale(0.8);
 }
 
 /*7번 sns*/
@@ -926,14 +937,26 @@ a:hover{
     border-top: solid 1px #949494;
     border-right: solid 1px #949494;
 }
+.ec-base-paginate ol{
+    display: flex;
+    gap: .125rem;
+}
 .ec-base-paginate li a{
     color: #949494;
+    transition: all 0.2s linear;
+    border-radius: 50%;
 }
 .ec-base-paginate li{
     border: none;
+    margin: 0;
 }
 .ec-base-paginate li a.this{
     color: #000;
-    border-bottom: solid 1px #000;
-    padding-bottom: 10px;
+    border: none;
+    background: #ddd;
+    padding: 0;
+    line-height: 32px;
+}
+.ec-base-paginate li a:hover{
+    background: #ddd;
 }
