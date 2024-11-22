@@ -797,6 +797,7 @@ a:hover{
 }
 
 /*서브페이지*/
+/*상품 목록 페이지*/
 .xans-element-.xans-product.xans-product-menupackage{
     margin: 2rem 0 0;
 }
@@ -843,13 +844,18 @@ a:hover{
 }
 .xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     border: none;
     margin: 0;
 }
 .xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu .prdCount{
-    /* float: none; */
-    display: none;
+    float: none;
+    padding: 0;
+    color: #949494;
+    font-size: 0.875rem;
+}
+.xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu .prdCount strong{
+    color: #000;
 }
 .xans-element-.xans-product.xans-product-orderby{
     margin: 0;
@@ -865,12 +871,14 @@ a:hover{
 }
 .xans-product-normalmenu ul#type li a{
     color: #949494;
-    font-size: 14px;
+    font-size: 0.875rem;
+    transition: all 0.2s ease-in-out;
 }
 .xans-product-normalmenu ul#type li a:hover,
 .xans-product-normalmenu ul#type li a.sort{
     color: #000;
 }
+
 .xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main{
     margin: 1.25rem 0 0;
 }
