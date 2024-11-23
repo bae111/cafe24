@@ -26,7 +26,6 @@ $(function(){
             element.appendChild(document.createTextNode(percentageValue)); // 숫자 텍스트 추가
             element.appendChild(percentSpan); // % 문자 span 추가
         }
-
     });
 })
 
@@ -64,7 +63,6 @@ var main_banner_swiper = new Swiper(".main-banner-swiper", {
     loop: true
 });
 
-
 var best_swiper = new Swiper(".best-swiper", {
     slidesPerView: 4,
     spaceBetween: 40,
@@ -74,25 +72,25 @@ var best_swiper = new Swiper(".best-swiper", {
     loop: true
 });
 
-
-var new_swiper = new Swiper(".new-swiper", {
-    slidesPerView: 3,
-    spaceBetween: 40,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    loop: true,
-});
-
 var middle_swiper = new Swiper(".middle-banner-swiper", {
-        // autoplay: {
-    //     delay: 3000
+    //  autoplay: {
+    //      delay: 3000
     // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     loop: true
+});
+
+var new_swiper = new Swiper(".new-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    slidesPerGroup: 3,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
 });
 
