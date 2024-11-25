@@ -9,23 +9,53 @@ $(function(){
         }
     });
 
-    // refurbishPer의 텍스트에서 % 문자만 추출하여 span 태그에 담기
+    $('#type').change(function() {
+        // 현재 스크롤 위치를 sessionStorage에 저장
+        sessionStorage.setItem('scrollPosition', $(window).scrollTop());
 
-    const refurbishPer = document.querySelectorAll('#refurbish .salePer');
+        // 선택한 페이지로 이동
+        location.href = $(this).val();
+    });
 
-    refurbishPer.forEach(element => {
-        const percentageText = element.textContent; // 텍스트 내용 가져오기
-        const percentageValue = parseFloat(percentageText); // 텍스트를 부동 소수점 숫자로 변환
+    // 페이지가 로드되었을 때 스크롤 위치 복원
+    var scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        // 페이지 로딩 후 스크롤 위치가 저장되어 있으면 해당 위치로 이동
+        $(window).on('load', function() {
+            $(window).scrollTop(scrollPosition);
+            // 스크롤 위치 복원 후 sessionStorage에서 해당 값을 제거
+            sessionStorage.removeItem('scrollPosition');
+        });
+    }
+    
+    // 기존 정렬 방법 처리
+    var sSortName = CAPP_SHOP_FRONT_COMMON_UTIL.getParameterByName('sort_method');
 
-        if (!isNaN(percentageValue)) { // 변환이 성공했는지 확인
-            const percentSpan = document.createElement('span'); // 새로운 span 요소 생성
-            percentSpan.textContent = '%'; // span 요소에 % 문자 추가
+    if (sSortName !== '') {
 
-            // 기존 텍스트 노드를 대체하기 위해 span 요소로 교체
-            element.innerHTML = ''; // 기존 텍스트 삭제
-            element.appendChild(document.createTextNode(percentageValue)); // 숫자 텍스트 추가
-            element.appendChild(percentSpan); // % 문자 span 추가
+        if (sSortName.indexOf('#Product_ListMenu') < 0) {
+            sSortName = sSortName + '#Product_ListMenu';
         }
+
+        $('#type>option').each(function() {
+            if ($(this).val().indexOf(sSortName) > 0) {
+                $(this).prop('selected', true);
+            }
+        });
+    }
+
+    // 전체 체크박스 클릭 시 모든 개별 체크박스 상태 업데이트
+    $('th input[type="checkbox"]').change(function() {
+        const isChecked = $(this).prop('checked');
+        // 모든 개별 체크박스 상태 업데이트
+        $('[id^="basket_chk_id_"]').prop('checked', isChecked);
+    });
+
+    // 개별 체크박스 클릭 시 전체 체크박스 상태 업데이트
+    $('[id^="basket_chk_id_"]').change(function() {
+        const allChecked = $('[id^="basket_chk_id_"]:checked').length === $('[id^="basket_chk_id_"]').length;
+        // 전체 체크박스 상태 업데이트
+        $('th input[type="checkbox"]').prop('checked', allChecked);
     });
 })
 
