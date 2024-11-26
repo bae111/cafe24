@@ -10,23 +10,9 @@ $(function(){
     });
 
     $('#type').change(function() {
-        // 현재 스크롤 위치를 sessionStorage에 저장
-        sessionStorage.setItem('scrollPosition', $(window).scrollTop());
-
         // 선택한 페이지로 이동
         location.href = $(this).val();
     });
-
-    // 페이지가 로드되었을 때 스크롤 위치 복원
-    var scrollPosition = sessionStorage.getItem('scrollPosition');
-    if (scrollPosition) {
-        // 페이지 로딩 후 스크롤 위치가 저장되어 있으면 해당 위치로 이동
-        $(window).on('load', function() {
-            $(window).scrollTop(scrollPosition);
-            // 스크롤 위치 복원 후 sessionStorage에서 해당 값을 제거
-            sessionStorage.removeItem('scrollPosition');
-        });
-    }
     
     // 기존 정렬 방법 처리
     var sSortName = CAPP_SHOP_FRONT_COMMON_UTIL.getParameterByName('sort_method');
@@ -58,33 +44,6 @@ $(function(){
         $('th input[type="checkbox"]').prop('checked', allChecked);
     });
 })
-
-document.addEventListener('DOMContentLoaded', function() {
-    const tabButtons = document.querySelectorAll('.nav-link');
-    const tabContents = document.querySelectorAll('.tab-pane');
-
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // 모든 탭 버튼과 콘텐츠를 비활성화
-            tabButtons.forEach(btn => {
-                btn.classList.remove('active');
-                btn.setAttribute('aria-selected', 'false');
-            });
-            tabContents.forEach(content => {
-                content.classList.remove('show', 'active');
-            });
-
-            // 클릭한 버튼 활성화
-            this.classList.add('active');
-            this.setAttribute('aria-selected', 'true');
-
-            // 해당 콘텐츠 활성화
-            const targetId = this.getAttribute('data-bs-target');
-            const targetContent = document.querySelector(targetId);
-            targetContent.classList.add('show', 'active');
-        });
-    });
-});
 
 var main_banner_swiper = new Swiper(".main-banner-swiper", {
     // autoplay: {
@@ -124,3 +83,56 @@ var new_swiper = new Swiper(".new-swiper", {
     loop: true,
 });
 
+var order_best_swiper = new Swiper(".order-best-swiper", {
+    slidesPerView: 6,
+    spaceBetween: 40,
+    loop: true
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.nav-link');
+    const tabContents = document.querySelectorAll('.tab-pane');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // 모든 탭 버튼과 콘텐츠를 비활성화
+            tabButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+            tabContents.forEach(content => {
+                content.classList.remove('show', 'active');
+            });
+
+            // 클릭한 버튼 활성화
+            this.classList.add('active');
+            this.setAttribute('aria-selected', 'true');
+
+            // 해당 콘텐츠 활성화
+            const targetId = this.getAttribute('data-bs-target');
+            const targetContent = document.querySelector(targetId);
+            targetContent.classList.add('show', 'active');
+        });
+    });
+
+    const productItems = document.querySelectorAll('.xans-product .xans-product-listitem.spec');
+
+    productItems.forEach(function(item) {
+        // 각 상품의 원래 가격과 할인된 가격을 가져옵니다
+        const originalPriceElement = item.querySelector('.xans-product .xans-product-listitem.spec li:nth-child(2) > span');
+        const discountedPriceElement = item.querySelector('.xans-product .xans-product-listitem.spec li:nth-child(3) > span');
+        
+        // 텍스트로 입력된 가격을 숫자 형태로 변환합니다
+        const originalPrice = parseInt(originalPriceElement.textContent.replace('₩', '').replace(',', ''), 10); // 원래 가격
+        const discountedPrice = parseInt(discountedPriceElement.textContent.replace('₩', '').replace(',', ''), 10); // 할인된 가격
+
+        // 할인율 계산
+        if (originalPrice > discountedPrice) {
+            const discountRate = ((originalPrice - discountedPrice) / originalPrice) * 100;
+
+            // 할인율을 소수점 한 자리까지 계산하고 표시
+            const discountRateElement = item.querySelector('.discount-rate');
+            discountRateElement.textContent = `${discountRate.toFixed(0)}%`;
+        }
+    });
+});
