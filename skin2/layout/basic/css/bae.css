@@ -382,7 +382,7 @@ a:hover{
 .ec-base-product .prdList > li{
     margin: 0 ;
 }
-/*메인 베스트 상품, 서브 베스트 상품 정렬*/
+/*메인 베스트 상품, 서브 상품 정렬*/
 .xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec,
 .xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .xans-product-listitem{
     gap: 0;
@@ -391,23 +391,23 @@ a:hover{
 /*상품 설명 여백*/
 .ec-base-product .prdList .description ul li:first-child span,
 .xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:first-child span,
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:first-child span{
+.ec-base-product .spec li:first-child span{
     margin-bottom: 1rem;
 }
 .xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:nth-child(2),
 .xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:nth-child(3),
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:nth-child(2),
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:nth-child(3),
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:nth-child(4){
+.ec-base-product .spec li:nth-child(2),
+.ec-base-product .spec li:nth-child(3),
+.ec-base-product .spec li:nth-child(4){
     display: inline-block;
     margin-right: 0.25rem;
 }
 .xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:last-child .salePer{
     margin-left: 0.25rem;
 }
-.xans-element-.xans-product.xans-product-listitem-1.xans-product-listitem.xans-product-1.spec li:last-child .salePer,
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:last-child .salePer,
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main .spec li:last-child .discount-rate{
+.xans-product.spec li:last-child .salePer,
+.ec-base-product .spec li:last-child .salePer,
+.ec-base-product .spec li:last-child .discount-rate{
     font-size: 1rem;
     font-weight: 600;
     color: #d93333;
@@ -567,10 +567,6 @@ a:hover{
     border: solid 1px #fff;
     border-radius: 40px;
 }
-/* .selection-tab .ec-base-product ul.grid2 li .description,
-.selection-tab .ec-base-product ul.grid2 li .thumbnail{
-    width: 220px;
-} */
 .selection-tab .ec-base-product ul.grid2 li .description{
     float: none;
     margin: 0;
@@ -637,7 +633,7 @@ a:hover{
 .new-section .title{
     display: none;
 }
-.new-swiper {
+.new-swiper.ec-base-product {
     width: 80%;
     margin: 0 auto;
 }
@@ -646,10 +642,6 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-/* .new-swiper .swiper-wrapper .thumbnail,
-.new-swiper .ec-base-product ul.grid3 > li{
-    width: 350px;
-} */
 .new-swiper .swiper-wrapper .thumbnail .prdImg{
     background-color: #f8f8f8;
     border-radius: 50%;
@@ -786,6 +778,9 @@ a:hover{
 .xans-element-.xans-product.xans-product-menupackage{
     margin: 2rem 0 0;
 }
+.menuCategory{
+    display: none;
+}
 /*페이지 경로*/
 .path{
     display: flex;
@@ -838,34 +833,36 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
     display: block;
-
 }
-.xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu{
+.xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu,
+.xans-element-.xans-product.xans-product-searchdata.search-top .searchResult{
     display: flex;
     justify-content: space-between;
     border: none;
     margin: 0;
 }
-.xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu .prdCount{
+.xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu .prdCount,
+.xans-element-.xans-product.xans-product-searchdata.search-top .searchResult .record{
     float: none;
     padding: 0;
     color: #949494;
     font-size: 0.875rem;
 }
-.xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu .prdCount strong{
+.xans-element-.xans-product.xans-product-normalmenu #Product_ListMenu .prdCount strong,
+.xans-product-searchdata .searchResult .record strong{
     color: #000;
 }
 .xans-element-.xans-product.xans-product-orderby{
     margin: 0;
 }
-.xans-product-normalmenu #type{
+.xans-product .type{
     font-size: 0.875rem;
     border: none;
 }
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main{
+.ec-base-product{
     margin: 1.25rem 0 0;
 }
-.xans-element-.xans-product.xans-product-listnormal.ec-base-product.product-list-main ul.grid4 > li{
+.ec-base-product ul.grid4 > li{
     width: calc(25% - 16px);
     margin: 0 .5rem 3.5rem;
 }
@@ -1541,4 +1538,58 @@ a:hover{
 }
 #mypageS #myshopMain ul .shopMain p{
     display: none;
+}
+/*검색*/
+.search-top.xans-product-searchdata .searchField{
+    padding: 1rem 0;
+    margin: 0;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-top.xans-product-searchdata .searchField fieldset{
+    margin: 0;
+}
+.search-top.xans-product-searchdata .searchField .searchInput{
+    border: none;
+    background: #f8f8f8;
+    padding: 0 1rem;
+    display: flex;
+    min-width: 400px;
+    position: static;
+    border-radius: 1.25rem;
+}
+.search-top.xans-product-searchdata .searchField .searchInput .keyword{
+    height: auto;
+    line-height: 3rem;
+    background: transparent;
+    font-size: 1rem;
+}
+.search-top.xans-product-searchdata .searchField .searchInput .btnSearch{
+    position: static;
+}
+.search-top.xans-product-searchdata .searchField .xans-product-hotkeyword{
+    margin: 1rem 0;
+}
+.search-top.xans-product-searchdata .searchField .xans-product-hotkeyword .heading{
+    border: none;
+    color: #000;
+    font-size: .875rem;
+    font-weight: 500;
+}
+.search-top.xans-product-searchdata .searchField .xans-product-hotkeyword .list li{
+    margin: 0 0 0 1rem;
+}
+.search-top.xans-product-searchdata .searchField .xans-product-hotkeyword .list li a{
+    color: #000;
+    font-size: 12px;
+}
+.search-top.xans-product-searchdata .searchField .search_text{
+    font-size: 1rem;
+    margin: 1rem 0 0;
+    color: #949494;
+}   
+.search-top.xans-product-searchdata .searchField .search_text .count{
+    color: #000;
 }
