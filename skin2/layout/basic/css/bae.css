@@ -1540,6 +1540,10 @@ a:hover{
     display: none;
 }
 /*검색*/
+.search-top #searchContent,
+.search-top .btnSearchOption{
+    display: none;
+}
 .search-top.xans-product-searchdata .searchField{
     padding: 1rem 0;
     margin: 0;
@@ -1592,4 +1596,11 @@ a:hover{
 }   
 .search-top.xans-product-searchdata .searchField .search_text .count{
     color: #000;
+}
+.search-top.xans-product-searchdata .noData p{
+    color: #000;
+}
+.search-top.xans-product-searchdata .noData ul li{
+    font-size: .75rem;
+    color: #949494;
 }
