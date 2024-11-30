@@ -24,8 +24,8 @@ a:hover{
 .content-section{
     margin: 6.25rem 0 ;
 }
-.sub-page-m{
-    margin: 6rem 0;
+.sub-page{
+    padding: 2rem 0 6rem;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after{
@@ -825,7 +825,7 @@ a:hover{
 }
 .xans-product-menupackage .title,
 .titleArea{
-    margin: 2rem 0 4rem;
+    margin: 2rem;
 }
 .xans-element-.xans-product.xans-product-headcategory.title h2,
 .titleArea h2{
@@ -1603,4 +1603,62 @@ a:hover{
 .search-top.xans-product-searchdata .noData ul li{
     font-size: .75rem;
     color: #949494;
+}
+/*이용안내*/
+.guide .ec-base-tab .menu{
+    display: none;
+}
+.guide .ec-base-tab.toggle{
+    margin-bottom: 4rem;
+}
+.guide .ec-base-tab .title{
+    border-bottom: solid 1px #949494;
+    cursor: pointer;
+    padding: 1.25rem 1rem;
+    font-size: .875rem;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.guide .ec-base-tab .title::after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: solid 1px #949494;
+    border-bottom: solid 1px #949494;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+}
+.guide .ec-base-tab .contents{
+    display: none;
+    padding: 1.25rem 1rem 0;
+    color: #949494;
+    line-height: 1.25rem;
+    font-size: .75rem;
+}
+.guide .ec-base-tab .contents strong,
+.guide .ec-base-tab .contents b{
+    color: #000;
+    font-weight: 500;
+}
+.guide .ec-base-tab.seleted .contents{
+    display: block;
+}
+.guide .ec-base-tab.seleted .title::after {
+    transform: rotate(135deg);
+}
+/*이용약관,개인정보*/
+.privacyP.ec-base-box.typeThinBg,
+.agreeP.ec-base-box.typeThinBg{
+    border: none;
+    background: transparent;
+    color: #000;
+    font-size: .875rem;
+}
+.privacyP.ec-base-box.typeThinBg .agree,
+.agreeP.ec-base-box.typeThinBg .agree{
+    border: none;
+    padding: 1rem;
 }
