@@ -248,6 +248,30 @@ a:hover{
     display: block;
     padding: 0;
     background: none;
+    position: relative;
+}
+.util-menu .xans-element-.xans-layout.xans-layout-statelogon a .count,
+.util-menu .xans-element-.xans-layout.xans-layout-statelogoff a .count{
+    background: #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    left: auto;
+    padding: 0;
+    margin: 0;
+}
+.util-menu .xans-element-.xans-layout.xans-layout-statelogon a .EC-Layout-Basket-count,
+.util-menu .xans-element-.xans-layout.xans-layout-statelogoff a .EC-Layout-Basket-count{
+    color: #fff;
+    font-weight: 600;
+    background: transparent;
+    padding: 0;
 }
 /*유틸메뉴 끝*/
 
