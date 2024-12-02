@@ -9,7 +9,7 @@ $(function(){
         }
     });
 
-    $('#type').change(function() {
+    $('.type').change(function() {
         // 선택한 페이지로 이동
         location.href = $(this).val();
     });
@@ -23,7 +23,7 @@ $(function(){
             sSortName = sSortName + '#Product_ListMenu';
         }
 
-        $('#type>option').each(function() {
+        $('.type>option').each(function() {
             if ($(this).val().indexOf(sSortName) > 0) {
                 $(this).prop('selected', true);
             }
@@ -42,6 +42,10 @@ $(function(){
         const allChecked = $('[id^="basket_chk_id_"]:checked').length === $('[id^="basket_chk_id_"]').length;
         // 전체 체크박스 상태 업데이트
         $('th input[type="checkbox"]').prop('checked', allChecked);
+    });
+
+    $('.guide .ec-base-tab.toggle .title').click(function() {
+        $(this).closest('.toggle').toggleClass('seleted');
     });
 })
 
@@ -115,12 +119,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const productItems = document.querySelectorAll('.xans-product .xans-product-listitem.spec');
+    const productItems = document.querySelectorAll('.spec');
 
     productItems.forEach(function(item) {
         // 각 상품의 원래 가격과 할인된 가격을 가져옵니다
-        const originalPriceElement = item.querySelector('.xans-product .xans-product-listitem.spec li:nth-child(2) > span');
-        const discountedPriceElement = item.querySelector('.xans-product .xans-product-listitem.spec li:nth-child(3) > span');
+        const originalPriceElement = item.querySelector('.spec li:nth-child(2) > span');
+        const discountedPriceElement = item.querySelector('.spec li:nth-child(3) > span');
         
         // 텍스트로 입력된 가격을 숫자 형태로 변환합니다
         const originalPrice = parseInt(originalPriceElement.textContent.replace('₩', '').replace(',', ''), 10); // 원래 가격
