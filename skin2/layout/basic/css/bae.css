@@ -1932,9 +1932,6 @@ a:hover{
     background: #e5e5e5;
     color: #000;
 }
-/* .detailP .ec-base-tab.gFlex h3{
-    display: none;
-} */
 .detailP .ec-base-tab.gFlex .menu{
     border: none;
     margin: 0;
@@ -1953,4 +1950,192 @@ a:hover{
 }
 .detailP .ec-base-tab.gFlex .menu .selected a{
     border-bottom: solid 1px #000;
+}
+
+/*상세페이지 탭*/
+.detailP .dtab{
+    margin-bottom: 6rem;
+}
+.detailP .dtab .tabProduct_box{
+    margin: 0 auto 2rem;
+    min-height: 60px;
+}
+.detailP .dtab .tabProduct_box .tabProduct{
+    padding: 1rem 0;
+}
+.detailP .dtab .tabProduct_box .tabProduct.tab_fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 997;
+    background: #fff;
+    border-bottom: solid 1px #e5e5e5;
+}
+.detailP .dtab .tabProduct_box .tabProduct ul{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+}
+.detailP .dtab .tabProduct_box .tabProduct ul li{
+    width: 24%;
+    text-align: center;
+}
+.detailP .dtab .tabProduct_box .tabProduct ul li a{
+    color: #949494;
+    line-height: 2;
+}
+.detailP .dtab .tabProduct_box .tabProduct ul li.selected a,
+.detailP .dtab .tabProduct_box .tabProduct ul li.selected a span{
+    font-weight: 600;
+    color: #000;
+}
+.detailP .dtab .tabProduct_box .tabProduct ul li a span{
+    color: #949494;
+    margin-left: .5rem;
+}
+#prdReview,#prdQnA,#prdInfo {
+    display:none;
+}
+
+/*후기*/
+.detailP .board_title {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2rem;
+}
+.detailP .board_title h2 {
+    display: none;
+}
+.detailP [class^='btnNormal']:not(.disabled):hover{
+    background: #e5e5e5;
+}
+.detailP .ec-base-table table{
+    border: none;
+    margin: 0;
+}
+.detailP .ec-base-table table thead tr th{
+    padding: 1rem;
+    border: none;
+    color: #000;
+    background: #f8f8f8;
+    text-align: center;
+}
+.detailP .ec-base-table table thead tr th:nth-child(2){
+    text-align: left;
+}
+.detailP .ec-base-table table .center .xans-record-{
+    transition: all .2s ease-in-out;
+}
+.detailP .ec-base-table table .center .xans-record-:hover{
+    background: #f8f8f8;
+}
+.detailP .ec-base-table table .center tr td.left{
+    padding-left: 1rem;
+}
+.detailP .ec-base-table table .center tr td{
+    border: none;
+    color: #000;
+    padding: 1rem;
+}
+.detailP .ec-base-table table .center .view .fr-view p:first-child{
+    text-align: left;
+    padding: 1rem 2rem;
+}
+.detailP .ec-base-table table .center .view .fr-view p:nth-child(2),
+.detailP .xans-product-additional .view p:last-child{
+    display: none;
+}
+.detailP .xans-product-additional .view .ec-base-button{
+    padding: 1rem 2rem;
+}
+.detailP .xans-product-additional .view .ec-base-button .gLeft{
+    float: none;
+    display: block;
+}
+.detailP .ec-base-table table .center form{
+    padding: 0;
+}
+.detailP .ec-base-table table .center form .memoCont{
+    margin: 0;
+    padding: 1rem 2rem 2rem;
+    border: none;
+    background: #f8f8f8;
+    color: #000;
+}
+.detailP .ec-base-table table .center form .memoCont .nameArea{
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+}
+.detailP .ec-base-table table .center form .memoCont .nameArea input{
+    border: none;
+    border-bottom: solid 1px #000;
+    background: transparent;
+    padding: 0;
+    height: auto;
+    margin: 0 1rem;
+    color: #000;
+    font-size: 14px;
+    outline: none;
+    line-height: 2;
+    text-indent: 10px;
+}
+.detailP .ec-base-table table .center form .memoCont textarea{
+    min-height: 100px;
+    outline: none;
+    border: solid 1px #f8f8f8;
+}
+.detailP .ec-base-table table .center form .memoCont .user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.detailP .ec-base-table table .center form .memoCont .user .btnEm{
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e5e5;
+    color: #000;
+}
+.detailP .ec-base-table table .center form .memoCont .user .btnEm:hover{
+    background: #000;
+    color: #fff;
+}
+.detailP .xans-product-additional .noAccess, 
+.detailP .xans-product-additional .nodata{
+    padding: 4rem 0;
+    text-align: center;
+    color: #949494;
+}
+/*안내*/
+.detailP .detail_guide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.detailP .detail_guide .ec-base-fold.theme1 {
+    width: 49%;
+}
+.detailP .detail_guide .ec-base-fold.theme1 .title {
+    border: 0;
+    cursor: default;
+    font-size: 20px;
+}
+.detailP .detail_guide .ec-base-fold.theme1 .title:after {
+    display: none;
+}
+.detailP .detail_guide .ec-base-fold.theme1 .title h2{
+    border-bottom: solid 1px #949494;
+    padding: 1.25rem 1rem;
+    font-size: 1rem;
+    color: #000;
+}
+.detailP .detail_guide .ec-base-fold.theme1 .contents{
+    padding: 1rem;
+    font-size: .875rem;
+    color: #949494;
 }
