@@ -1617,6 +1617,9 @@ a:hover{
 .search-top.xans-product-searchdata .searchField .search_text .count{
     color: #000;
 }
+.search-top.xans-product-searchdata .noData{
+    padding: 6rem 0;
+}
 .search-top.xans-product-searchdata .noData p{
     color: #000;
 }
@@ -2138,4 +2141,51 @@ a:hover{
     padding: 1rem;
     font-size: .875rem;
     color: #949494;
+}
+
+/* 관련상품 */
+.detailP .relation {
+    position:relative;
+}
+.detailP .relation .relation_title {
+    padding: 2rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000;
+}
+.detailP .relation_slide{
+    width: 80%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.detailP .swiper-container.relation_slide ul {
+    display:flex;
+    padding:0;
+    margin:0;
+    height:auto;
+}
+.detailP .swiper-container.relation_slide ul > li {
+
+    vertical-align: top;
+    overflow: hidden;
+    margin: 0;
+}
+.detailP .swiper-container.relation_slide ul > li .prdList__item {
+    margin: 0;
+}
+.detailP .swiper-container.relation_slide ul .thumbnail {
+    margin: 0;
+}
+.detailP .swiper-container.relation_slide ul > li .description .name{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.detailP .swiper-container.relation_slide ul > li .description .name a,
+.detailP .swiper-container.relation_slide ul > li .description .price {
+    color: #000;
+}
+.detailP .btn-000{
+    top: 60%;
 }
