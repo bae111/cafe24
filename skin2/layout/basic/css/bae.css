@@ -2002,7 +2002,7 @@ a:hover{
     display:none;
 }
 
-/*후기*/
+/*게시판*/
 .detailP .board_title {
     display: flex;
     justify-content: end;
@@ -2025,7 +2025,8 @@ a:hover{
     background: #f8f8f8;
     text-align: center;
 }
-.detailP .ec-base-table table thead tr th:nth-child(2){
+.detailP #prdReview .ec-base-table table thead tr th:nth-child(2),
+.detailP #prdQnA .ec-base-table table thead tr th:nth-child(3){
     text-align: left;
 }
 .detailP .ec-base-table table .center .xans-record-{
@@ -2046,16 +2047,22 @@ a:hover{
     text-align: left;
     padding: 1rem 2rem;
 }
-.detailP .ec-base-table table .center .view .fr-view p:nth-child(2),
-.detailP .xans-product-additional .view p:last-child{
+.detailP .ec-base-table table .center .view .fr-view p:nth-child(2){
     display: none;
 }
-.detailP .xans-product-additional .view .ec-base-button{
+.detailP .xans-product-additional .view div.ec-base-button{
     padding: 1rem 2rem;
+}
+.detailP .xans-product-additional .view p.ec-base-button{
+    padding: 0;
 }
 .detailP .xans-product-additional .view .ec-base-button .gLeft{
     float: none;
-    display: block;
+    display: flex;
+    gap: .5rem;
+}
+.detailP .xans-product-additional .view .ec-base-button .gLeft .btnNormal.sizeS{
+    padding: .5rem 2rem;
 }
 .detailP .ec-base-table table .center form{
     padding: 0;
@@ -2114,6 +2121,25 @@ a:hover{
     text-align: center;
     color: #949494;
 }
+.detailP .ec-base-table table .center .boardComment{
+    padding: 0 2rem 1rem;
+}
+.detailP .ec-base-table table .center .boardComment li{
+    margin: 0;
+    padding: 1rem;
+    border-top: solid 1px #e5e5e5;
+    color: #000;
+}
+.detailP .ec-base-table table .center .boardComment li .name{
+    font-weight: 500;
+}
+.detailP .ec-base-table table .center .boardComment li .comment{
+    margin: 0;
+    padding: 1rem 0 0;
+    border: none;
+    font-size: .875rem;
+}
+
 /*안내*/
 .detailP .detail_guide {
     display: flex;
@@ -2166,7 +2192,6 @@ a:hover{
     height:auto;
 }
 .detailP .swiper-container.relation_slide ul > li {
-
     vertical-align: top;
     overflow: hidden;
     margin: 0;
