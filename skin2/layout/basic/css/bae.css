@@ -311,8 +311,6 @@ a:hover{
 }
 /*메인배너 끝*/
 
-
-
 /*메인섹션타이틀*/
 .ec-base-product .title h2,
 .content-title{
@@ -1069,6 +1067,7 @@ a:hover{
 /*장바구니 상품 없는 상태*/
 #orderB .xans-order-basketpackage .xans-order-empty p{
     color: #000;
+    font-weight: 400;
 }
 /*장바구니 테이블*/
 
@@ -2213,4 +2212,40 @@ a:hover{
 }
 .detailP .btn-000{
     top: 60%;
+}
+/*장바구니 알림창*/
+.addB.xans-product-basketadd{
+    border: solid 1px #000;
+}
+.addB.xans-product-basketadd .header{
+    padding: 1rem;
+    background: #e5e5e5;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addB.xans-product-basketadd .content{
+    background: url('/layout/img/icon/cart-add-icon.svg') no-repeat center;
+}
+.addB.xans-product-basketadd .content p{
+    color: #000;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+.addB.ec-base-layer .ec-base-button{
+    padding: 1rem;
+    border: none;
+    background: transparent;
+}
+.addB.ec-base-layer .ec-base-button a.sizeS{
+    padding: .5rem 2rem;
+    width: auto;
+}
+.addB.ec-base-layer .ec-base-button a.sizeS:hover{
+    background: #e5e5e5;
+}
+.addB.ec-base-layer .close{
+    position: static;
+    padding: 0;
 }
