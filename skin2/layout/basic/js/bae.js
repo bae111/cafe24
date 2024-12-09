@@ -7,6 +7,24 @@ $(function(){
             $('#header').removeClass('fix');
             $('#top-btn').removeClass('show');
         }
+
+        // 상품상세 탭 고정
+        var header_height = $('#header .topArea').innerHeight();
+        var jh_offset = $('.tabProduct_box').offset();
+        if (($(document).scrollTop() + header_height) >= jh_offset.top) {
+            $('#tabProduct').addClass('tab_fixed');
+            $('#tabProduct').css('top', header_height + 0);
+        } else {
+            $('#tabProduct').removeClass('tab_fixed');
+        }
+    });
+
+    // 상품상세 탭 이벤트
+    $('#tabProduct a').click(function(e){
+        var header_height = jQuery('#header .topArea').innerHeight();
+        var offset = $('.xans-product-additional').offset(); //선택한 태그의 위치를 반환
+        $('html').animate({scrollTop : offset.top - header_height}, 400);
+        if(e) e.preventDefault();
     });
 
     $('.type').change(function() {
