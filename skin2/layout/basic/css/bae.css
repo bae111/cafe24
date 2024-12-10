@@ -2216,22 +2216,24 @@ a:hover{
 /*장바구니 알림창*/
 .addB.xans-product-basketadd{
     border: solid 1px #000;
+    max-width: 350px;
 }
 .addB.xans-product-basketadd .header{
     padding: 1rem;
-    background: #e5e5e5;
+    background: none;
     color: #000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: end;
 }
 .addB.xans-product-basketadd .content{
-    background: url('/layout/img/icon/cart-add-icon.svg') no-repeat center;
+    padding: 1rem .5rem 0;
+    background: none;
 }
 .addB.xans-product-basketadd .content p{
     color: #000;
     font-weight: 400;
     font-size: 0.875rem;
+    padding-top: 1rem;
 }
 .addB.ec-base-layer .ec-base-button{
     padding: 1rem;
