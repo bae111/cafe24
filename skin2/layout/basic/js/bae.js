@@ -65,6 +65,38 @@ $(function(){
     $('.guide .ec-base-tab.toggle .title').click(function() {
         $(this).closest('.toggle').toggleClass('seleted');
     });
+
+    // 상세 관련상품
+	if (jQuery('.xans-product-relation').val() != undefined) {	//관련상품 모듈 있을때만 실행(없으면 주문서페이지에서 오류)
+		var relation_slide = new Swiper('.relation_slide', {
+			slidesPerView: 5,
+			spaceBetween: 20,
+			// slidesPerGroup: 5,
+			// observer: true,
+			// observeParents: true,
+			watchOverflow: 'true', // 스와이프가 한개일때 버튼 라인 비활성
+			speed:700,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination-relation',
+				clickable: true,
+			},
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			// breakpoints: {
+			// 	768: {
+			// 		slidesPerView: 2,
+			// 		spaceBetween: 10,
+			// 	},
+			// }
+		});
+	}
 })
 
 var main_banner_swiper = new Swiper(".main-banner-swiper", {
