@@ -79,6 +79,30 @@ a:hover{
 #top-btn.show{
     display: block;
 }
+input[type=checkbox]{
+    background: url('/layout/img/icon/checkbox.svg') no-repeat;
+    width: 20px !important;
+    height: 20px !important;
+    -webkit-appearance: none;
+}
+input[type=checkbox]:checked{
+    background: url('/layout/img/icon/checkbox_on.svg') no-repeat;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+input[type=radio]{
+    background: url('/layout/img/icon/radio.svg') no-repeat;
+    width: 22px !important;
+    height: 22px !important;
+    -webkit-appearance: none;
+}
+input[type=radio]:checked{
+    background: url('/layout/img/icon/radio_on.svg') no-repeat;
+    width: 22px !important;
+    height: 22px !important;
+}
+
 /*레이아웃*/
 /*헤더*/
 #header{
@@ -1226,18 +1250,7 @@ a:hover{
 #orderB .xans-element-.xans-order.xans-order-list.center .ec-base-qty a img{
     display: none;
 }
-/*체크박스*/
-#orderB input[type=checkbox]{
-    background: url('/layout/img/icon/checkbox.svg') no-repeat;
-    width: 20px;
-    height: 20px;
-    -webkit-appearance: none;
-}
-#orderB input[type=checkbox]:checked{
-    background: url('/layout/img/icon/checkbox_on.svg') no-repeat;
-    width: 20px;
-    height: 20px;
-}
+
 /*X 아이콘*/
 #orderB [class^='btn'] .icoDelete{
     width: 14px;
@@ -2015,7 +2028,7 @@ a:hover{
     margin: 0;
 }
 .detailP .ec-base-table table thead tr th{
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     border: none;
     color: #000;
     background: #f8f8f8;
@@ -2247,4 +2260,227 @@ a:hover{
 .addB.ec-base-layer .close{
     position: static;
     padding: 0;
+}
+/*주문/결제*/
+#userStyle{
+    background: none;
+}
+#userStyle #header .header h1,
+#userStyle #mCafe24Order .title h2,
+#userStyle #mCafe24Order .segment .ec-base-table .price,
+#userStyle #mCafe24Order .totalPay .heading{
+    font-weight: 400;
+}
+#userStyle #header .headerMenu .btnBack a:before,
+#userStyle #header .headerMenu .btnBack a:after,
+#userStyle #ec-shippingInfo-closeRecentAddressList::before,
+#userStyle #ec-shippingInfo-closeRecentAddressList::after,
+#userStyle #mCafe24Order .ec-base-prdInfo .btnRemove::before,
+#userStyle #mCafe24Order .ec-base-prdInfo .btnRemove::after,
+#userStyle #mCafe24Order .recentShipArea .contact dd{
+    display: none;
+}
+#userStyle #header .headerMenu .btnBack a{
+    background: url('/layout/img/icon/arr-icon.svg');
+}
+#userStyle #header .headerMenu.gLeft [class*="btn"]{
+    float: none;
+}
+#userStyle header .headerMenu .btnBasket > a{
+    background: url('/layout/img/icon/cart-icon-30.svg');
+}
+#userStyle #header .headerMenu .btnMy{
+    background: url('/layout/img/icon/mypage-icon-30.svg');
+}
+#userStyle #header .headerMenu .btnBasket .count{
+    background: #000;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 10px;
+    padding: 0;
+}
+#userStyle #header .titleArea{
+    margin: 1rem 0;
+}
+#userStyle #header .titleArea h1{
+    background: none;
+    border: none;
+    border-bottom: solid 1px #e5e5e5;
+    color: #000;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: .5rem;
+    line-height: 3;
+}
+#userStyle #mCafe24Order.typeHeader{
+    padding-top: 0;
+}
+#userStyle #mCafe24Order .ec-base-fold > .title:after{
+    border-color: #000;
+}
+#userStyle #mCafe24Order .ec-base-tab li.selected a{
+    font-weight: 400;
+    padding: 1.5rem;
+    color: #fff;
+}
+#userStyle #mCafe24Order .ec-base-tab li{
+    border: none;
+    background: #f8f8f8;
+}
+#userStyle #mCafe24Order .ec-base-tab li.selected a{
+    background: #000;
+}
+#userStyle #mCafe24Order .ec-base-tab a{
+    color: #000;
+    padding: 1.5rem;
+}
+#userStyle #mCafe24Order .ec-base-tab ul{
+    border: none;
+    margin-bottom: 1.5rem;
+}
+#userStyle #mCafe24Order{
+    border: none;
+    background: none;
+}
+#userStyle #mCafe24Order .segment{
+    padding: 1rem;
+}
+#userStyle #mCafe24Order .recentShipArea .recent{
+    padding: 0;
+}
+#userStyle #mCafe24Order .recentShipArea .name{
+    padding: 0;
+    color: #000;
+    font-weight: 400;
+    display: flex;
+    gap: .2rem;
+}
+#userStyle #mCafe24Order .recentShipArea .name .txtEm,
+#userStyle #mCafe24Order .address,
+#userStyle #mCafe24Order .recentShipArea .contact,
+#userStyle #mCafe24Order .shippingList .button .btnText,
+#userStyle #mCafe24Order .ec-base-prdInfo .description .info li{
+    color: #949494;
+}
+#userStyle .address span:nth-child(2),
+#userStyle .address span:last-child,
+#userStyle #mCafe24Order .orderArea .totalPrice .title h3,
+#userStyle #mCafe24Order .txtStrong,
+#userStyle #mCafe24Order .ec-base-table,
+#userStyle #mCafe24Order .txtRed,
+#userStyle #mCafe24Order .payMethod > li > label,
+#userStyle #mCafe24Order .txtEm{
+    color: #000;
+}
+#userStyle #mCafe24Order .sideRight .btnNormal.mini{
+    border: none;
+    padding: 0;
+}
+#userStyle #mCafe24Order .sideRight .btnNormal.mini:hover{
+    border-bottom: solid 1px #000;
+}
+#userStyle #mCafe24Order .shippingList + .sideRight{
+    top: 0;
+}
+#userStyle #ec-shippingInfo-closeRecentAddressList,
+#userStyle #mCafe24Order .ec-base-prdInfo .btnRemove{
+    border: none !important;
+    background: url('/layout/img/icon/close-icon.svg') no-repeat;
+}
+#userStyle #mCafe24Order .shippingList{
+    margin-top: 2rem;
+}
+#userStyle #mCafe24Order .shippingList li{
+    padding: 1rem 0;
+    border: none;
+}
+#userStyle #mCafe24Order .fRadio[type="radio"],
+#userStyle #mCafe24Order input[type="checkbox"]{
+    background: url('/layout/img/icon/checkbox.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+}
+#userStyle #mCafe24Order .fRadio:not(:disabled):checked[type="radio"], 
+#userStyle #mCafe24Order .selected > .fRadio,
+#userStyle #mCafe24Order input:not(:disabled):checked[type="checkbox"]{
+    background: url('/layout/img/icon/checkbox_on.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+}
+#userStyle #mCafe24Order .segment.ec-shippingInfo-shippingMessage.segment.unique{
+    border-top: solid 1px #f8f8f8;
+    padding: 2rem 1rem;
+}
+#userStyle #mCafe24Order select{
+    border: solid 1px #e5e5e5;
+    color: #000;
+    background: url('/layout/img/icon/select-icon.svg') no-repeat 100% 50%;
+}
+#userStyle #mCafe24Order .ec-base-fold,
+#userStyle #mCafe24Order .payMethod > li:first-child,
+#userStyle #mCafe24Order .payMethod > li .inner > .ec-base-label:last-child{
+    border-bottom: solid 1px #f8f8f8;
+}
+#userStyle #mCafe24Order .ec-base-prdInfo .thumbnail{
+    border: solid 1px #f8f8f8;
+}
+#userStyle #mCafe24Order .orderArea .totalPrice .title,
+#userStyle #mCafe24Order .totalPay.paymentPrice,
+#userStyle #mCafe24Order .totalPay{
+    background: #f8f8f8;
+    padding: 1rem;
+}
+#userStyle #mCafe24Order .segment .ec-base-table tbody th, 
+#userStyle #mCafe24Order .segment .ec-base-table tbody td{
+    font-size: .875rem;
+}
+#userStyle #mCafe24Order .totalPay.paymentPrice,
+#userStyle #mCafe24Order .totalPay.paymentPrice .txtStrong{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+#userStyle #mCafe24Order .payMethod{
+    margin: 0;
+}
+#userStyle #mCafe24Order input[type="radio"]{
+    background: url('/layout/img/icon/radio.svg') no-repeat 0 0;
+}
+#userStyle #mCafe24Order input:not(:disabled):checked[type="radio"]{
+    background: url('/layout/img/icon/radio_on.svg') no-repeat 0 0;
+}
+#userStyle #mCafe24Order .payMethod > li.selected > .inner{
+    border: none;
+    color: #000;
+}
+#userStyle #mCafe24Order label{
+    color: #000;
+    line-height: 2;
+}
+#userStyle #orderFixItem.ec-base-button.gFull [class*="btn"]{
+    background: #000;
+    margin: 4rem 0;
+    height: 72px;
+}
+#userStyle #orderFixItem.ec-base-button.gFull [class*="btn"] span{
+    line-height: 72px;
+}
+#userStyle #mCafe24Order .icoRequired{
+    background: url('/layout/img/icon/asterisk-icon.svg') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+}
+#userStyle #mCafe24Order input[type="text"], 
+#userStyle #mCafe24Order input[type="password"], 
+#userStyle #mCafe24Order input[type="number"], 
+#userStyle #mCafe24Order input[type="tel"],
+#userStyle #mCafe24Order .btnBasic{
+    border: solid 1px #e5e5e5;
+}
+#userStyle #mCafe24Order .ec-base-mail .mailAddress .directInput input,
+#userStyle #mCafe24Order .payMethod > li .inner > .ec-base-label > label{
+    border: none;
 }
