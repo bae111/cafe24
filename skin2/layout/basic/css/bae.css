@@ -2484,3 +2484,119 @@ input[type=radio]:checked{
 #userStyle #mCafe24Order .payMethod > li .inner > .ec-base-label > label{
     border: none;
 }
+/*주문결제(비회원)*/
+#userStyle #mCafe24Order .ec-base-help{
+    color: #949494;
+}
+#userStyle #mCafe24Order .agreeArea .allAgree{
+    border-bottom: solid 1px #949494;
+    color: #000;
+}
+#userStyle #mCafe24Order .agreeArea .agreement li{
+    border-top: solid 1px #f8f8f8;
+}
+#userStyle #mCafe24Order .agreeArea .agreement .agree .check > label{
+    font-size: .875rem;
+}
+#userStyle #mCafe24Order .joinArea > .ec-base-table,
+#userStyle #mCafe24Order .pannelArea{
+    background: #f8f8f8;
+}
+#userStyle #mCafe24Order .agreeArea .agreement .btnAgree{
+    background: url('/layout/img/icon/arr-icon.svg');
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+/*로그인*/
+.loginP .ec-base-box.typeThin{
+    border: none;
+}
+.loginP .xans-member-login .login{
+    padding: 4rem 0;
+    color: #000;
+    border: none;
+    margin: 0;
+}
+.loginP .xans-member-login h3,
+.loginP .xans-member-login .login fieldset .security{
+    display: none;
+}
+.loginP .xans-member-login .login fieldset{
+    width: 400px;
+    padding: 0;
+}
+.loginP .xans-member-login .login fieldset .id, 
+.loginP .xans-member-login .login fieldset .password{
+    width: 100%;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: solid 1px #000;
+}
+.loginP .xans-member-login .login fieldset input[type=text], 
+.loginP .xans-member-login .login fieldset input[type=password]{
+    height: auto;
+    line-height: 4;
+    color: #000;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    padding: 0 .5rem;
+}
+.loginP .xans-member-login .login input::placeholder{
+    color: #949494;
+}
+.loginP .xans-member-login .login fieldset > a{
+    position: static;
+    width: 100%;
+    display: block;
+    line-height: 4;
+    background: #e5e5e5;
+    color: #000;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    margin: 2rem 0;
+}
+.loginP .xans-member-login .login fieldset > a:hover{
+    background: #000;
+    color: #fff;
+}
+.loginP .xans-member-login .login fieldset .list{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.loginP .xans-member-login .login fieldset li{
+    background: none;
+    float: none;
+    padding: 0;
+    transition: all .2s ease-in-out;
+}
+.loginP .xans-member-login .login fieldset li a{
+    color: #949494;
+}
+.loginP .xans-member-login .login fieldset li:hover a{
+    color: #000;
+}
+.loginP .xans-member-login .login fieldset .snsArea li::before{
+    background: #e5e5e5;
+}
+/*로그인(비회원구매)*/
+.loginP .xans-member-login .login fieldset .link{
+    margin: 0;
+    padding: 2rem 0;
+    background: none;
+    color: #949494;
+    font-size: 0.875rem;
+}
+.loginP .xans-member-login .login fieldset .link a{
+    position: static;
+    font-size: 0.75rem;
+    color: #949494;
+    text-align: center;
+    display: block;
+    line-height: 3;
+}
+.loginP .xans-member-login .login fieldset .link a:hover{
+    color: #000;
+}
