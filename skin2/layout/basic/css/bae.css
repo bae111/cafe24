@@ -2600,3 +2600,75 @@ input[type=radio]:checked{
 .loginP .xans-member-login .login fieldset .link a:hover{
     color: #000;
 }
+/*아이디찾기*/
+.findP .xans-member-findid .findId{
+    width: 400px;
+}
+.findP .titleArea ul,
+.findP .ec-base-box.typeThin h3.boxTitle{
+    display: none;
+}
+.findP .ec-base-box.typeThin{
+    border: none;
+    padding: 4rem 0 6rem;
+}
+.findP .xans-member-findid .findId p{
+    margin: 0;
+}
+.findP .xans-member-findid .findId strong{
+    display: block;
+    margin: 0;
+    padding: .5rem 0;
+    color: #949494;
+    font-size: .875rem;
+}
+.findP .xans-member-findid .findId .member select,
+.findP .xans-member-findid .findId #name, 
+.findP .xans-member-findid .findId #email,
+.findP .xans-member-findid .findId .mobile input{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border: none;
+    border-bottom: solid 1px #949494;
+    background: transparent;
+    outline: none;
+    font-size: .875rem;
+    color: #000;
+}
+.findP .xans-member-findid .findId .check{
+    margin: 1rem 0 2rem;
+    font-size: .875rem;
+    color: #000;
+}
+.findP .xans-member-findid .findId .email,
+.findP .xans-member-findid .findId .mobile{
+    margin: 1rem 0 2rem;
+}
+.findP .xans-member-findid .findId .check label{
+    margin: 0 .5rem;
+}
+.findP .ec-base-button[class*="gColumn"] [class^="btn"]{
+    line-height: 2;
+    background: #e5e5e5;
+    color: #000;
+    transition: all .2s ease-in-out;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin: 0;
+}
+.findP .ec-base-button[class*="gColumn"] [class^="btn"]:hover{
+    background-color: #000;
+    color: #fff;
+}
+.findP .xans-member-findid .findId #mobile1, 
+.findP .xans-member-findid .findId #mobile2, 
+.findP .xans-member-findid .findId #mobile3{
+    width: 120px;
+}
+.findP .xans-member-findid .findId .dash{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
