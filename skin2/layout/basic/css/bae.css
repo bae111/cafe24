@@ -90,7 +90,6 @@ input[type=checkbox]:checked{
     width: 20px !important;
     height: 20px !important;
 }
-
 input[type=radio]{
     background: url('/layout/img/icon/radio.svg') no-repeat;
     width: 22px !important;
@@ -101,6 +100,21 @@ input[type=radio]:checked{
     background: url('/layout/img/icon/radio_on.svg') no-repeat;
     width: 22px !important;
     height: 22px !important;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('/layout/img/icon/select-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center right 8px;
+    padding-right: 30px;
+    border-color: #e9e9e9;
+    border-radius: 0px;
+    background-color: #fff;
+    min-width: 86px;
+    padding: 0 40px 0 16px;
 }
 
 /*레이아웃*/
@@ -829,6 +843,7 @@ input[type=radio]:checked{
 }
 /*페이지 경로*/
 .path{
+    margin-top: 2rem;
     display: flex;
     justify-content: end;
 }
@@ -2034,10 +2049,6 @@ input[type=radio]:checked{
     background: #f8f8f8;
     text-align: center;
 }
-.detailP #prdReview .ec-base-table table thead tr th:nth-child(2),
-.detailP #prdQnA .ec-base-table table thead tr th:nth-child(3){
-    text-align: left;
-}
 .detailP .ec-base-table table .center .xans-record-{
     transition: all .2s ease-in-out;
 }
@@ -2052,11 +2063,12 @@ input[type=radio]:checked{
     color: #000;
     padding: 1rem;
 }
-.detailP .ec-base-table table .center .view .fr-view p:first-child{
+.detailP .ec-base-table table .center .view .fr-view{
     text-align: left;
     padding: 1rem 2rem;
 }
-.detailP .ec-base-table table .center .view .fr-view p:nth-child(2){
+.detailP .ec-base-table table .center .view .fr-view p:nth-child(2),
+.detailP #product-qna-read .fr-view p br{
     display: none;
 }
 .detailP .xans-product-additional .view div.ec-base-button{
@@ -2148,7 +2160,22 @@ input[type=radio]:checked{
     border: none;
     font-size: .875rem;
 }
-
+.detailP #product-qna-read td #SecretForm_6 .view{
+    padding: 1rem 3rem;
+    background: #f8f8f8;
+}
+.detailP #product-qna-read td #SecretForm_6 .view p{
+    text-align: left;
+}
+.detailP #product-qna-read td #SecretForm_6 .view p input{
+    border: none;
+    outline: none;
+}
+.detailP #product-qna-read td #SecretForm_6 .view p input[type="button"]{
+    background: url('/layout/img/icon/check-line-icon.svg') no-repeat center;
+    width: 14px;
+    height: 14px;
+}
 /*안내*/
 .detailP .detail_guide {
     display: flex;
@@ -2177,7 +2204,6 @@ input[type=radio]:checked{
     font-size: .875rem;
     color: #949494;
 }
-
 /* 관련상품 */
 .detailP .relation {
     position:relative;
@@ -2600,9 +2626,13 @@ input[type=radio]:checked{
 .loginP .xans-member-login .login fieldset .link a:hover{
     color: #000;
 }
-/*아이디찾기*/
-.findP .xans-member-findid .findId{
+/*아이디,비밀번호찾기*/
+.findP .xans-member-findid .findId,
+.findP .xans-member-findpasswd .findPw{
     width: 400px;
+}
+.findP .xans-member-findpasswd .findPw fieldset{
+    margin: 0;
 }
 .findP .titleArea ul,
 .findP .ec-base-box.typeThin h3.boxTitle{
@@ -2615,28 +2645,35 @@ input[type=radio]:checked{
 .findP .xans-member-findid .findId p{
     margin: 0;
 }
-.findP .xans-member-findid .findId strong{
+.findP .xans-member-findid .findId strong,
+.findP .xans-member-findpasswd .findPw .ec-base-desc .term{
     display: block;
     margin: 0;
     padding: .5rem 0;
     color: #949494;
     font-size: .875rem;
 }
+.findP .xans-member-findpasswd .findPw .ec-base-desc .term{
+    width: 100%;
+}
 .findP .xans-member-findid .findId .member select,
-.findP .xans-member-findid .findId #name, 
-.findP .xans-member-findid .findId #email,
-.findP .xans-member-findid .findId .mobile input{
+.findP .xans-member-findid .findId input[type=text],
+.xans-member-findid .findId input[type=password],
+.findP .xans-member-findid .findId .mobile input,
+.findP .xans-member-findpasswd .findPw select,
+.findP .xans-member-findpasswd .findPw input[type=text], 
+.findP .xans-member-findpasswd .findPw input[type=password]{
     width: 100%;
     height: auto;
     padding: 1rem;
     border: none;
     border-bottom: solid 1px #949494;
-    background: transparent;
     outline: none;
     font-size: .875rem;
     color: #000;
 }
-.findP .xans-member-findid .findId .check{
+.findP .xans-member-findid .findId .check,
+.findP .xans-member-findpasswd .findPw .ec-base-desc .desc .check{
     margin: 1rem 0 2rem;
     font-size: .875rem;
     color: #000;
@@ -2645,7 +2682,10 @@ input[type=radio]:checked{
 .findP .xans-member-findid .findId .mobile{
     margin: 1rem 0 2rem;
 }
-.findP .xans-member-findid .findId .check label{
+
+.findP .xans-member-findid .findId .check label,
+.findP .xans-member-findpasswd .findPw input[type=radio] + label, 
+.findP .xans-member-findpasswd .findPw input[type=checkbox] + label{
     margin: 0 .5rem;
 }
 .findP .ec-base-button[class*="gColumn"] [class^="btn"]{
@@ -2663,12 +2703,32 @@ input[type=radio]:checked{
 }
 .findP .xans-member-findid .findId #mobile1, 
 .findP .xans-member-findid .findId #mobile2, 
-.findP .xans-member-findid .findId #mobile3{
+.findP .xans-member-findid .findId #mobile3,
+.findP .xans-member-findpasswd .findPw #mobile1, 
+.findP .xans-member-findpasswd .findPw #mobile2, 
+.findP .xans-member-findpasswd .findPw #mobile3
+{
     width: 120px;
 }
-.findP .xans-member-findid .findId .dash{
+.findP .xans-member-findid .findId #name, 
+.findP .xans-member-findid .findId #email{
+    width: 400px;
+}
+.findP .xans-member-findid #ssn1,
+.findP .xans-member-findid #ssn2{
+    width: 189px;
+}
+.findP .xans-member-findid .findId .dash,
+.findP .xans-member-findpasswd .findPw .dash{
     display: inline-block;
     width: 20px;
     text-align: center;
     vertical-align: middle;
+}
+.findP .xans-member-findpasswd .findPw .ec-base-desc .desc{
+    padding: 0;
+}
+.findP .xans-member-findpasswd .findPw .gBlank5{
+    color: #949494;
+    font-size: .75rem;
 }
