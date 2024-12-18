@@ -2863,3 +2863,102 @@ select {
     color: #949494;
     font-size: .75rem;
 }
+/*게시판*/
+.listP .titleArea p:before,
+.listP .xans-board-search p:before,
+.listP .ec-base-table.typeList.gBorder tbody td.thumb span{
+    display: none;
+}
+.listP .titleArea h2 font{
+    color: #000;
+}
+.listP .titleArea p{
+    display: block;
+    color: #949494;
+    margin: 1rem 0;
+    text-align: center;
+    padding: 0;
+}
+.listP .xans-board-listpackage .boardSort{
+    float: none;
+    margin: 0 0 1.5rem;
+    text-align: right;
+}
+.listP .ec-base-table.typeList table{
+    border: none;
+}
+.listP .ec-base-table thead th{
+    border: none;
+    background: #f8f8f8;
+    padding: 1.5rem 1rem;
+    font-size: 0.875rem;
+    color: #000;
+    text-align: center;
+}
+.listP .ec-base-table.typeList.gBorder tbody td{
+    border: none;
+    border-bottom: solid 1px #f8f8f8;
+    padding: 1.5rem 1rem;
+    color: #000;
+    font-size: 0.875rem;
+}
+.listP .ec-base-table.typeList.gBorder tbody td.subject a font,
+.listP .ec-base-table.typeList.gBorder tbody td.subject span.txtEm{
+    color: #000;
+}
+.listP .ec-base-table.typeList.gBorder tbody td .txtNum{
+    font-size: .875rem;
+    color: #949494;
+}
+.listP .xans-board-listpackage .ec-base-table .thumb img{
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 60%;
+}
+.listP .xans-board-buttonlist.ec-base-button.typeBG{
+    border: none;
+    background: none;
+    padding: 2rem 0 0;
+}
+.listP .ec-base-button .gRight a:hover,
+.listP .xans-board-search .btnEmFix:hover{
+    background: #000;
+    color: #fff;
+}
+.listP .xans-board-search{
+    text-align: center;
+    padding: 2rem 0;
+}
+.listP .xans-board-search p{
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.listP select{
+    width: 140px;
+    height: 40px;
+    border: solid 1px #e5e5e5;
+    color: #000;
+    font-size: .875rem;
+    outline: none;
+    padding: 0 1rem;
+}
+.listP .xans-board-search #search{
+    height: 40px;
+    line-height: 40px;
+    border: solid 1px #e5e5e5;
+    color: #000;
+    outline: none;
+}
+.listP .xans-board-search .btnEmFix{
+    line-height: 38px;
+}
+
+.listP .ec-base-table .message{
+    border: none;
+    margin: 0;
+    color: #949494;
+    font-weight: 400;
+    padding: 10rem 0;
+}
