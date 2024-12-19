@@ -324,7 +324,7 @@ select {
     align-items: center;
     position: relative;
 }
-.main-banner-swiper .swiper-slide a img{
+.main-banner-swiper .swiper-slide .img img{
     display: block;
     width: 100%;
     object-fit: cover;
@@ -347,6 +347,24 @@ select {
 .main-banner-swiper .swiper-slide .banner-text p{
     font-size: 1.25rem;
     font-weight: 500;
+}
+.main-banner-swiper .swiper-slide .banner-text a{
+    color: #fff;
+    font-size: .875rem;
+}
+.main-banner-swiper .swiper-slide .banner-text a::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: .5rem;
+    border-top: solid 1px #fff;
+    border-right: solid 1px #fff;
+    transform: rotate(45deg);
+    transition: all .2s ease-in-out;
+}
+.main-banner-swiper .swiper-slide .banner-text a:hover::after{
+    transform: translateX(10px) rotate(45deg);
 }
 /*메인배너 끝*/
 

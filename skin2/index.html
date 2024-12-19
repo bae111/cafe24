@@ -4,33 +4,33 @@
 <!--edibot_skin_data:{"width":1014,"mo_width":640}-->
 <section class="visual">
     <div app4you-smart-banner="smart-banner-admin-PC00001" class="-xans-element- xans-smart-banner-admin xans-smart-banner-admin-PC00001" data-banner-name="메인상단배너">
+        <!-- <div>
+            <a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/img_main.jpg" /></a>
+        </div> -->
         <div class="swiper mySwiper main-banner-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="#none">
-                        <img src="/layout/img/main-banner-1.jpg" alt="FW 헤드웨어 뉴 젤리 미드비니 배너">
-                    </a>
+                    <div class="img"><img src="/layout/img/main-banner-1.jpg" alt="FW 헤드웨어 뉴 젤리 미드비니 배너"></div>
                     <div class="banner-text">
                         <h2>FW 헤드웨어 스타일링<br>뉴 젤리 미드비니</h2>
                         <p>FW 스타일링에 한 끗을 더하는 키 아이템 MLB 젤리비니</p>
+                        <a href="#none">MORE</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#none">
-                        <img src="/layout/img/main-banner-2.jpg" alt="한글 로고 볼캡 배너">
-                    </a>
+                    <div class="img"><img src="/layout/img/main-banner-2.jpg" alt="한글 로고 볼캡 배너"></div>
                     <div class="banner-text">
                         <h2>MLB limited edition<br>한글 로고 볼캡</h2>
                         <p>MLB의 헤리티지를 담은 3팀의 한글로고 에디션</p>
+                        <a href="#none">MORE</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="#none">
-                        <img src="/layout/img/main-banner-3.jpg" alt="베스트 리뷰 아이템 배너">
-                    </a>
+                    <div class="img"><img src="/layout/img/main-banner-3.jpg" alt="베스트 리뷰 아이템 배너"></div>
                     <div class="banner-text">
-                        <h2>MLB 베스트 리뷰 아이템<br>N-COVER & ROOKIE BALLCAP</h2>
-                        <p>완성도 높은 빈티지 언스트럭쳐 볼캡 스타일링</p>
+                        <h2>ALL TIME BEST<br>MLB 볼캡 베스트3</h2>
+                        <p>계절을 타지 않는 트렌디 스타일링 아이템</p>
+                        <a href="#none">MORE</a>
                     </div>
                 </div>
             </div>
@@ -59,19 +59,19 @@
         <ul class="prdList grid4 swiper-wrapper">
             <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                 <div class="thumbnail">
-                    <div class="prdImg">
-                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                        <span class="wish">{$list_wish_icon}</span>
+                    <div class="prdImg image-container">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                     </div>
                     <div class="icon">
                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                         <div class="button">
+                            <span class="wish">{$list_wish_icon}</span>
                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                         </div>
                     </div>
                 </div>
-                <div class="description">
+                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                     <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
                     <p class="ec-base-help txtWarn txt11 {$exclusive_purchase_olny|display}"> 단독구매상품</p>
                     <span class="name {$rental_icon|display}">월 {$rental_maximum_price|numberformat}원 / {$rental_maximum_term}개월</span>
@@ -83,19 +83,19 @@
             </li>
             <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                 <div class="thumbnail">
-                    <div class="prdImg">
-                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                        <span class="wish">{$list_wish_icon}</span>
+                    <div class="prdImg image-container">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                     </div>
                     <div class="icon">
                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                         <div class="button">
+                            <span class="wish">{$list_wish_icon}</span>
                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                         </div>
                     </div>
                 </div>
-                <div class="description">
+                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                     <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
                     <p class="ec-base-help txtWarn txt11 {$exclusive_purchase_olny|display}"> 단독구매상품</p>
                     <span class="name {$rental_icon|display}">월 {$rental_maximum_price|numberformat}원 / {$rental_maximum_term}개월</span>
@@ -107,19 +107,19 @@
             </li>
             <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                 <div class="thumbnail">
-                    <div class="prdImg">
-                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                        <span class="wish">{$list_wish_icon}</span>
+                    <div class="prdImg image-container">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                     </div>
                     <div class="icon">
                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                         <div class="button">
+                            <span class="wish">{$list_wish_icon}</span>
                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                         </div>
                     </div>
                 </div>
-                <div class="description">
+                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                     <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
                     <p class="ec-base-help txtWarn txt11 {$exclusive_purchase_olny|display}"> 단독구매상품</p>
                     <span class="name {$rental_icon|display}">월 {$rental_maximum_price|numberformat}원 / {$rental_maximum_term}개월</span>
@@ -131,19 +131,19 @@
             </li>
             <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                 <div class="thumbnail">
-                    <div class="prdImg">
-                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                        <span class="wish">{$list_wish_icon}</span>
+                    <div class="prdImg image-container">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                     </div>
                     <div class="icon">
                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                         <div class="button">
+                            <span class="wish">{$list_wish_icon}</span>
                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                         </div>
                     </div>
                 </div>
-                <div class="description">
+                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                     <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
                     <p class="ec-base-help txtWarn txt11 {$exclusive_purchase_olny|display}"> 단독구매상품</p>
                     <span class="name {$rental_icon|display}">월 {$rental_maximum_price|numberformat}원 / {$rental_maximum_term}개월</span>
@@ -155,19 +155,19 @@
             </li>
             <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                 <div class="thumbnail">
-                    <div class="prdImg">
-                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                        <span class="wish">{$list_wish_icon}</span>
+                    <div class="prdImg image-container">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                     </div>
                     <div class="icon">
                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                         <div class="button">
+                            <span class="wish">{$list_wish_icon}</span>
                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                         </div>
                     </div>
                 </div>
-                <div class="description">
+                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                     <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
                     <p class="ec-base-help txtWarn txt11 {$exclusive_purchase_olny|display}"> 단독구매상품</p>
                     <span class="name {$rental_icon|display}">월 {$rental_maximum_price|numberformat}원 / {$rental_maximum_term}개월</span>
@@ -179,19 +179,19 @@
             </li>
             <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                 <div class="thumbnail">
-                    <div class="prdImg">
-                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                        <span class="wish">{$list_wish_icon}</span>
+                    <div class="prdImg image-container">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                     </div>
                     <div class="icon">
                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                         <div class="button">
+                            <span class="wish">{$list_wish_icon}</span>
                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                         </div>
                     </div>
                 </div>
-                <div class="description">
+                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                     <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
                     <p class="ec-base-help txtWarn txt11 {$exclusive_purchase_olny|display}"> 단독구매상품</p>
                     <span class="name {$rental_icon|display}">월 {$rental_maximum_price|numberformat}원 / {$rental_maximum_term}개월</span>
@@ -203,19 +203,19 @@
             </li>
             <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                 <div class="thumbnail">
-                    <div class="prdImg">
-                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                        <span class="wish">{$list_wish_icon}</span>
+                    <div class="prdImg image-container">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                     </div>
                     <div class="icon">
                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                         <div class="button">
+                            <span class="wish">{$list_wish_icon}</span>
                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                         </div>
                     </div>
                 </div>
-                <div class="description">
+                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                     <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
                     <p class="ec-base-help txtWarn txt11 {$exclusive_purchase_olny|display}"> 단독구매상품</p>
                     <span class="name {$rental_icon|display}">월 {$rental_maximum_price|numberformat}원 / {$rental_maximum_term}개월</span>
@@ -227,19 +227,19 @@
             </li>
             <li id="anchorBoxId_{$product_no}" class="swiper-slide">
                 <div class="thumbnail">
-                    <div class="prdImg">
-                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                        <span class="wish">{$list_wish_icon}</span>
+                    <div class="prdImg image-container">
+                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                     </div>
                     <div class="icon">
                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                         <div class="button">
+                            <span class="wish">{$list_wish_icon}</span>
                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                         </div>
                     </div>
                 </div>
-                <div class="description">
+                <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
                     <strong class="name"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
                     <p class="ec-base-help txtWarn txt11 {$exclusive_purchase_olny|display}"> 단독구매상품</p>
                     <span class="name {$rental_icon|display}">월 {$rental_maximum_price|numberformat}원 / {$rental_maximum_term}개월</span>
@@ -285,11 +285,11 @@
                         <div class="thumbnail">
                             <div class="prdImg">
                                 <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                <span class="wish">{$list_wish_icon}</span>
                             </div>
                             <div class="icon">
                                 <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                 <div class="button">
+                                    <span class="wish">{$list_wish_icon}</span>
                                     <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                     <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                 </div>
@@ -316,11 +316,11 @@
                         <div class="thumbnail">
                             <div class="prdImg">
                                 <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                <span class="wish">{$list_wish_icon}</span>
                             </div>
                             <div class="icon">
                                 <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                 <div class="button">
+                                    <span class="wish">{$list_wish_icon}</span>
                                     <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                     <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                 </div>
@@ -407,13 +407,13 @@
                         <ul class="prdList grid2">
                             <li id="anchorBoxId_{$product_no}">
                                 <div class="thumbnail">
-                                    <div class="prdImg">
-                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                        <span class="wish">{$list_wish_icon}</span>
+                                    <div class="prdImg image-container">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                                     </div>
                                     <div class="icon">
                                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                         <div class="button">
+                                            <span class="wish">{$list_wish_icon}</span>
                                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                         </div>
@@ -431,13 +431,13 @@
                             </li>
                             <li id="anchorBoxId_{$product_no}">
                                 <div class="thumbnail">
-                                    <div class="prdImg">
-                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                        <span class="wish">{$list_wish_icon}</span>
+                                    <div class="prdImg image-container">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                                     </div>
                                     <div class="icon">
                                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                         <div class="button">
+                                            <span class="wish">{$list_wish_icon}</span>
                                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                         </div>
@@ -478,13 +478,13 @@
                         <ul class="prdList grid2">
                             <li id="anchorBoxId_{$product_no}">
                                 <div class="thumbnail">
-                                    <div class="prdImg">
-                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                        <span class="wish">{$list_wish_icon}</span>
+                                    <div class="prdImg image-container">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                                     </div>
                                     <div class="icon">
                                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                         <div class="button">
+                                            <span class="wish">{$list_wish_icon}</span>
                                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                         </div>
@@ -502,13 +502,13 @@
                             </li>
                             <li id="anchorBoxId_{$product_no}">
                                 <div class="thumbnail">
-                                    <div class="prdImg">
-                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                        <span class="wish">{$list_wish_icon}</span>
+                                    <div class="prdImg image-container">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                                     </div>
                                     <div class="icon">
                                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                         <div class="button">
+                                            <span class="wish">{$list_wish_icon}</span>
                                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                         </div>
@@ -549,13 +549,13 @@
                         <ul class="prdList grid2">
                             <li id="anchorBoxId_{$product_no}">
                                 <div class="thumbnail">
-                                    <div class="prdImg">
-                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                        <span class="wish">{$list_wish_icon}</span>
+                                    <div class="prdImg image-container">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                                     </div>
                                     <div class="icon">
                                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                         <div class="button">
+                                            <span class="wish">{$list_wish_icon}</span>
                                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                         </div>
@@ -573,13 +573,13 @@
                             </li>
                             <li id="anchorBoxId_{$product_no}">
                                 <div class="thumbnail">
-                                    <div class="prdImg">
-                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                        <span class="wish">{$list_wish_icon}</span>
+                                    <div class="prdImg image-container">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                                     </div>
                                     <div class="icon">
                                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                         <div class="button">
+                                            <span class="wish">{$list_wish_icon}</span>
                                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                         </div>
@@ -620,13 +620,13 @@
                         <ul class="prdList grid2">
                             <li id="anchorBoxId_{$product_no}">
                                 <div class="thumbnail">
-                                    <div class="prdImg">
-                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                        <span class="wish">{$list_wish_icon}</span>
+                                    <div class="prdImg image-container">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                                     </div>
                                     <div class="icon">
                                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                         <div class="button">
+                                            <span class="wish">{$list_wish_icon}</span>
                                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                         </div>
@@ -644,13 +644,13 @@
                             </li>
                             <li id="anchorBoxId_{$product_no}">
                                 <div class="thumbnail">
-                                    <div class="prdImg">
-                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                                        <span class="wish">{$list_wish_icon}</span>
+                                    <div class="prdImg image-container">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}" ><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" class="image-medium"/><img src="{$image_small}" alt="{$seo_alt_tag}" class="image-small" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
                                     </div>
                                     <div class="icon">
                                         <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                                         <div class="button">
+                                            <span class="wish">{$list_wish_icon}</span>
                                             <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                             <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                                         </div>
@@ -710,11 +710,11 @@
                     <div class="thumbnail">
                         <div class="prdImg">
                             <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                            <span class="wish">{$list_wish_icon}</span>
                         </div>
                         <div class="icon">
                             <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                             <div class="button">
+                                <span class="wish">{$list_wish_icon}</span>
                                 <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                 <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                             </div>
@@ -734,11 +734,11 @@
                     <div class="thumbnail">
                         <div class="prdImg">
                             <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
-                            <span class="wish">{$list_wish_icon}</span>
                         </div>
                         <div class="icon">
                             <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons} {$rental_icon} {$regular_delivery_icon}</div>
                             <div class="button">
+                                <span class="wish">{$list_wish_icon}</span>
                                 <div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
                                 <div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}
                             </div>
