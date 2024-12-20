@@ -2980,3 +2980,50 @@ select {
     font-weight: 400;
     padding: 10rem 0;
 }
+/*게시판 목록*/
+.listP .ec-base-table table:before{
+    display: none;
+}
+.listP .ec-base-box.typeProduct{
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.listP .ec-base-box.typeProduct .thumbnail, 
+.listP .ec-base-box.typeProduct .information{
+    padding: 0;
+}
+.listP .ec-base-box.typeProduct .thumbnail a img{
+    border: none;
+    max-width: 100px;
+}
+.listP .ec-base-box.typeProduct .information h3{
+    margin: 0;
+    font-weight: 400;
+}
+.listP .ec-base-box.typeProduct .information h3 a{
+    color: #949494;
+    font-size: 1rem;
+}
+.listP .information .price{
+    color: #000;
+    text-align: center;
+    margin: .5rem 0 0;
+}
+.listP .information .button{
+    margin: 1rem 0 0;
+    border: none;
+    text-align: center;
+}
+.listP .information .button a:hover{
+    background: #000;
+    color: #fff;
+}
+.listP .ec-base-table table,
+.listP .xans-board-commentlist{
+    border: none;
+}
