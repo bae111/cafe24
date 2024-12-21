@@ -3027,3 +3027,168 @@ select {
 .listP .xans-board-commentlist{
     border: none;
 }
+.listP .ec-base-table .bd-title{
+    text-align: center;
+}
+.listP .ec-base-table .bd-title td{
+    padding: 2rem 0;
+    border-bottom: solid 1px #e5e5e5;
+    border-top: solid 1px #949494;
+}
+.listP .ec-base-table .bd-title .t01{
+    margin: 0 0 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.listP .ec-base-table .bd-title .t02{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    color: #949494;
+}
+.listP .ec-base-table .bd-title .t02 a{
+    font-size: 0.875rem;
+    color: #949494;
+}
+.listP .ec-base-table .bd-title .t02 span:not(:first-child):before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #949494;
+    margin: 0 12px;
+}
+.listP .btnNormalFix.sizeS:hover{
+    background: #e5e5e5;
+}
+.listP .xans-board-commentlist .boardComment li:first-child{
+    border-top: solid 1px #949494;
+    color: #000;
+}
+.listP .xans-board-commentlist .boardComment li div.commentTop{
+    padding: 1rem;
+    border-bottom: solid 1px #e5e5e5;
+}
+.listP .xans-board-commentwrite p{
+    margin: 0;
+}
+.listP .xans-board-commentwrite{
+    margin: 2rem 0;
+    padding: 1rem;
+    border: none;
+    background: #f8f8f8;
+    color: #949494;
+}
+.listP .ec-base-button.typeBG{
+    border: none;
+    background: none;
+}
+.listP .xans-board-movement{
+    border: none;
+    border-bottom: solid 1px #e5e5e5;
+    margin: 3rem 0 0;
+}
+.listP .xans-board-movement li{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.listP .xans-board-movement li.prev{
+    border-top: solid 1px #e5e5e5;
+    border-bottom: 0px;
+}
+.listP .xans-board-movement li.next{
+    border-top: solid 1px #e5e5e5;
+}
+.listP .xans-board-movement li strong{
+    width: auto;
+    padding: 1.5rem 0 1.5rem 3rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.listP .xans-board-movement li.prev strong{
+    background: url('/layout/img/icon/arr-u-icon.svg') no-repeat 10px center;
+}
+.listP .xans-board-movement li.next strong{
+    background: url('/layout/img/icon/arr-b-icon.svg') no-repeat 10px center;
+}
+.listP .xans-board-movement li a{
+    float: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-left: 0;
+    font-size: 0.875rem;
+    color: #000;
+}
+.listP .xans-board-movement li a:before{
+    content: '';
+    display: inline-block;
+    margin: 0 20px;
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e5;
+}
+.listP .xans-board-listsgroup h3{
+    margin: 4rem 0 1rem;
+    font-size: 1rem;
+    color: #000;
+}
+.listP .xans-board-commentwrite input[type=text], 
+.listP .xans-board-commentwrite input[type=password]{
+    margin: 0 .5rem 0 0;
+    border: none;
+    background: transparent;
+    border-bottom: solid 1px #000;
+    padding: 1rem;
+}
+.listP .xans-board-commentwrite textarea{
+    border: none;
+    outline: none;
+}
+.listP .xans-board-commentwrite .input span{
+    font-size: .875rem;
+    color: #000;
+}
+.listP .xans-board-commentwrite .view .ec-base-button{
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+.listP .xans-board-commentwrite .input,
+.listP .xans-board-commentwrite .view{
+    padding: 0 1rem;
+}
+.listP .ec-base-box.typeThin{
+    border: none;
+}
+.listP .xans-board-secure .secret .info{
+    color: #949494;
+}
+.listP .xans-board-secure .secret .info .txtEm{
+    color: #000;
+}
+.listP .xans-board-secure .secret .password label{
+    margin: 0;
+    text-align: center;
+}
+.listP .xans-board-secure .secret .password input{
+    border: none;
+    border-bottom: solid 1px #000;
+    color: #000;
+}
+.listP .xans-board-secure .secret .btnNormal.sizeM:hover{
+    background: #e5e5e5;
+}
+.listP .xans-board-secure .secret .btnEm.sizeM:hover{
+    background: #000;
+    color: #fff;
+}
+.listP .xans-board-read .ec-base-table .detail{
+    padding: 4rem 1rem 8rem;
+    border: none;
+    margin: 0;
+}
