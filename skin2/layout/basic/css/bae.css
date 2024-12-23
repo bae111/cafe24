@@ -3192,3 +3192,86 @@ select {
     border: none;
     margin: 0;
 }
+
+/*게시글 작성*/
+.listP .fr-toolbar .fr-newline{
+    background: transparent;
+}
+.listP .ec-base-table table{
+    border-top: solid 1px #949494;
+}
+.listP .ec-base-table tbody th,
+.listP .ec-base-table tbody td{
+    border: none;
+    border-bottom: solid 1px #e5e5e5;
+    padding: 1rem;
+    background: transparent;
+    font-size: 0.875rem;
+    color: #000;
+}
+.listP .ec-base-table tbody th{
+    text-align: center;
+    line-height: 3;
+}
+.listP .ec-base-table tbody td input[type=text],
+.listP .ec-base-table tbody td input[type=password]{
+    padding: 0 .5rem;
+    height: 40px;
+    line-height: 40px;
+    border: solid 1px #e5e5e5;
+    font-size: 0.875rem;
+    background: transparent;
+    outline: none;
+    color: #000;
+}
+.listP .ec-base-table tbody td input#subject{
+    margin-right: 1rem;
+}
+.listP .ec-froala-theme .fr-toolbar.fr-top{
+    border: none;
+    /* border-top: solid 1px #949494; */
+    background: #f8f8f8;
+}
+.listP .fr-box.fr-basic.fr-top .fr-wrapper{
+    border: none;
+}
+.listP .second-toolbar{
+    border: none;
+    background: #f8f8f8;
+    border-bottom: solid 1px #949494;
+}
+.listP .ec-froala-theme.fr-box .fr-counter{
+    color: #949494;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.listP input + label{
+    margin: 0 .5rem;
+}
+.listP .xans-board-write .ec-base-table #captcha {
+    width: 180px;
+}
+.listP .txtInfo{
+    color: #949494;
+    font-size: .75rem;
+    background: url('/layout/img/icon/circle-alert-icon-14.svg') no-repeat 0 3px; 
+
+}
+.listP ul.info{
+    color: #949494;
+    font-size: .875rem;
+}
+.listP ul.info li{
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0;
+}
+.listP ul.info li:before{
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #949494;
+    border-radius: 50%;
+}
