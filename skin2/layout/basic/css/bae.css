@@ -3275,3 +3275,70 @@ select {
     background: #949494;
     border-radius: 50%;
 }
+/*게시판 메인*/
+.listM .boardMain .leftArea,
+.listM .boardMain .rightArea{
+    float: none;
+    width: 100%;
+    margin: 0 0 5rem;
+}
+.listM .boardMain .leftArea .board,
+.listM .boardMain .rightArea .board{
+    margin: 0;
+}
+.listM .boardMain .board .btnLink{
+    position: static;
+}
+.listM .boardMain .board .btnLink:hover{
+    box-shadow: none;
+    color: #000;
+}
+.listM .boardMain .board .btnLink::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-top: solid 1px #949494;
+    border-right: solid 1px #949494;
+    transform: rotate(45deg);
+    margin: 0 4px 1px;
+    vertical-align: baseline;
+}
+.listM .boardMain .board .btnLink:hover::after{
+    border-color: #000;
+}
+.listM .boardMain .board div.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #000;
+}
+.listM .boardMain .board h3{
+    font-size: 1.125rem;
+    color: #000;
+    border: none;
+    line-height: 3;
+    margin: 0;
+    height: auto;
+}
+.listM .ec-base-table.typeList table{
+    border: none;
+    border-bottom: solid 1px #e5e5e5;
+    margin: 0;
+}
+.listM .ec-base-table.typeList tbody tr td{
+    padding: 1.5rem 1rem;
+    vertical-align: middle;
+}
+.listM .boardMain .board .ec-base-table.typeList td.title a{
+    color: #949494;
+    font-size: .875rem;
+}
+.listM .boardMain .board .ec-base-table.typeList td.title a:hover{
+    color: #000;
+}
+.listM .boardMain .board .ec-base-table.typeList td,
+.listM .boardMain .board .btnLink{
+    color: #949494;
+    font-size: .75rem;
+}
