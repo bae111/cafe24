@@ -2554,96 +2554,181 @@ select {
     transform: rotate(180deg);
 }
 /*로그인*/
-.loginP .ec-base-box.typeThin{
-    border: none;
+.df-login-header{
+    display: none;
+    /* display: flex; */
+    justify-content: space-between;
+    height: 60px;
 }
-.loginP .xans-member-login .login{
-    padding: 4rem 0;
-    color: #000;
-    border: none;
+.df-login-header-button{
+    height: 60px;
+}
+.df-login-header-button_prev,.df-login-header-button_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.df-login-header-button_prev svg{
+    height: 24px;
+}
+.df-login-header-button_home svg{
+    height: 18px;
+}
+.df-login label,
+.df-login-security-save input[type=checkbox] + label,
+.df-login label + label{
     margin: 0;
 }
-.loginP .xans-member-login h3,
-.loginP .xans-member-login .login fieldset .security{
+.df-login-ready{
     display: none;
 }
-.loginP .xans-member-login .login fieldset{
+.df-login{
+    margin: 0 auto;
     width: 400px;
-    padding: 0;
 }
-.loginP .xans-member-login .login fieldset .id, 
-.loginP .xans-member-login .login fieldset .password{
-    width: 100%;
-    margin: .5rem 0;
-    border: none;
-    border-bottom: solid 1px #000;
+.df-login-titlearea{
+    text-align: center;
+    padding: 2rem 0;
 }
-.loginP .xans-member-login .login fieldset input[type=text], 
-.loginP .xans-member-login .login fieldset input[type=password]{
-    height: auto;
-    line-height: 4;
+.df-login-titlearea-title{
     color: #000;
-    outline: none;
-    font-size: 14px;
-    width: 100%;
-    padding: 0 .5rem;
+    font-size: 1.75rem;
 }
-.loginP .xans-member-login .login input::placeholder{
+.df-login-titlearea-info{
+    margin-top: 1rem;
     color: #949494;
+    font-size: .875rem;
 }
-.loginP .xans-member-login .login fieldset > a{
-    position: static;
+.df-login .snsArea{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 0 2rem;
+}
+.df-login-banner img{
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+.df-login-tab{
+    display: flex;
+    background: #f5f5f5;
+    border-radius: 12px;
+}
+.df-login-tab-item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    font-size: .875rem;
+    font-weight: 500;
+    letter-spacing: -.25px;
+    line-height: 1;
+    color: #949494; 
+}
+.df-login-tab-item_active{
+    background: #000;
+    color: #fff;
+    border-radius: 12px;
+}
+.df-login-guest{
+    display:none;
+}
+.df-login-security{
+    line-height: 3;
+    font-size: 13px;
+    color: #000;
+}
+.df-login-security-save{
+    display: flex;
+    align-items: center;
+    gap: .5rem; 
+}
+.df-login-form{
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.df-login-form-label input[type=text],
+.df-login-form-label input[type=password]{
     width: 100%;
-    display: block;
-    line-height: 4;
+    height: auto;
+    padding: 1rem;
+    border: none;
+    border-bottom: solid 1px #949494;
+    outline: none;
+    font-size: .875rem;
+    color: #000;
+}
+.df-login-util{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 30px;
+    margin-top: 1.25rem;
+}
+.df-login-util-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    letter-spacing: -.25px;
+    color: #949494; 
+}
+.df-login-util-item_join{
+    color: #000; 
+}
+.df-login-util-item + .df-login-util-item:before{
+    position: absolute;
+    left: -12px;
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #e5e5e5;
+    content: '';
+}
+.df-login-action{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.df-login-action-item{
+    line-height: 2;
     background: #e5e5e5;
     color: #000;
-    text-align: center;
     transition: all .2s ease-in-out;
-    margin: 2rem 0;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
 }
-.loginP .xans-member-login .login fieldset > a:hover{
+.df-login-action-item:hover{
     background: #000;
     color: #fff;
 }
-.loginP .xans-member-login .login fieldset .list{
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-around;
-}
-.loginP .xans-member-login .login fieldset li{
-    background: none;
-    float: none;
-    padding: 0;
-    transition: all .2s ease-in-out;
-}
-.loginP .xans-member-login .login fieldset li a{
-    color: #949494;
-}
-.loginP .xans-member-login .login fieldset li:hover a{
-    color: #000;
-}
-.loginP .xans-member-login .login fieldset .snsArea li::before{
-    background: #e5e5e5;
-}
-/*로그인(비회원구매)*/
-.loginP .xans-member-login .login fieldset .link{
-    margin: 0;
-    padding: 2rem 0;
-    background: none;
-    color: #949494;
-    font-size: 0.875rem;
-}
-.loginP .xans-member-login .login fieldset .link a{
-    position: static;
-    font-size: 0.75rem;
-    color: #949494;
+.df-login-info{
+    margin-top: 3rem;
     text-align: center;
-    display: block;
-    line-height: 3;
 }
-.loginP .xans-member-login .login fieldset .link a:hover{
+.df-login-info-title{
+    font-size: 0.875rem;
     color: #000;
+    font-weight: 500;
+}
+.df-login-info-desc{
+    display: block;
+    margin-top: .5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #949494;
+}
+.df-login-info-desc span{
+    margin: 0 .25rem;
+    color: #000;
+    font-weight: 500;
 }
 /*아이디,비밀번호찾기*/
 .findP .xans-member-findid .findId,
