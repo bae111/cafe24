@@ -655,7 +655,7 @@ select {
 
 /*5번 이벤트*/
 .event-seciton{
-    background: url('/layout/img/event-img.jpg') no-repeat center / cover;
+    background: url('/layout/img/event-img.jpg') no-repeat center/cover fixed;
     position: relative;
     z-index: 1;
     min-height: 600px;
@@ -677,9 +677,6 @@ select {
     align-items: center;
 }
 .event-seciton .event-text-box .left{
-    font-size: 1.875rem;
-    color: #fff;
-    font-weight: 400;
     display: flex;
 }
 .event-seciton .event-text-box .left::after{
@@ -690,8 +687,11 @@ select {
     display: block;
     margin-left: 2.5rem;
 }
-.event-seciton .event-text-box .left span{
+.event-seciton .event-text-box .left a{
     transform: translateY(-16px);
+    font-size: 1.875rem;
+    color: #fff;
+    font-weight: 400;
 }
 .event-seciton .event-text-box .right h4{
     font-size: 1.5rem;
@@ -703,7 +703,6 @@ select {
 .event-seciton .event-text-box .right p{
     color: #fff;
 }
-
 
 /*6번 신상품*/
 .new-section{
@@ -759,7 +758,7 @@ select {
     margin-bottom: 0.5rem;
 }
 .sns-section .sns-wrap .left a{
-    color: #fff;
+    color: transparent;
     font-size: 1.125rem;
     display: block;
 }
