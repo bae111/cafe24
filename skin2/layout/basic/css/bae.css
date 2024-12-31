@@ -3433,3 +3433,55 @@ select {
     color: #949494;
     font-size: .75rem;
 }
+/*팝업*/
+div.app-smart-popup{
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    margin: 0 !important;
+    border-radius: 12px 12px 0 0;
+    position: fixed;
+    overflow: hidden;
+    border: none;
+    width: 490px;
+}
+.app-smart-popup .app-smart-popup-slider{
+    width: 100% !important;
+}
+.app-smart-popup .smart-popup-img img{
+    max-width: 490px;
+    width: 100%;
+}
+.app-smart-popup .app-smart-popup-slider-dots li.app-smart-popup-slider-active button {
+    width: 21px !important;
+    background-color: white !important;
+}
+.app-smart-popup .app-smart-popup-slider-dots li button {
+    width: 6px !important;
+    height: 6px !important;
+    background-color: #80817e !important;
+    border-radius: 10px !important;
+}
+.app-smart-popup .smart-popup-btns{
+    border: none !important;
+}
+.app-smart-popup .smart-popup-btns button.smart-popup-close{
+    border-left: solid 1px #f5f5f5 !important;
+}
+.app-smart-popup .smart-popup-btns button:first-child{
+    border: none !important;
+}
+.app-smart-popup .smart-popup-btns button{
+    font-size: .875rem !important;
+    font-family: "Noto Sans KR", sans-serif !important;
+    height: 40px !important;
+}
+.app-smart-popup .smart-popup-btns button.smart-popup-close:hover{
+    background: #f5f5f5 !important;
+}
+body.nodeep div#modalBackpanel{
+    display: block !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    position: fixed !important;
+}
