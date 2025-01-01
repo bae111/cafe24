@@ -48,8 +48,8 @@ gsap.to(".best-swiper .swiper-wrapper", {
 
 const newSectionElements = [
     ".new-swiper",
-    ".swiper-button-next",
-    ".swiper-button-prev"
+    ".new-section .swiper-button-next",
+    ".new-section .swiper-button-prev"
 ];
 
 newSectionElements.forEach(element => {
@@ -83,6 +83,7 @@ gsap.to(".sns-section .sns-list li", {
     scale: 1,
     transformOrigin: "top right",
     ease: "power2.inOut",
+    stagger: 0.2,
     scrollTrigger: {
         trigger: ".sns-section",
         start: "top center",

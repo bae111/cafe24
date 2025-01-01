@@ -662,10 +662,10 @@ select {
 
 /*5번 이벤트*/
 .event-seciton{
-    background: url('/layout/img/event-img.jpg') no-repeat center/cover fixed;
+    background: url('/layout/img/event-img-3-1.jpg') no-repeat center / cover;
     position: relative;
     z-index: 1;
-    min-height: 600px;
+    min-height: 300px;
     display: flex;
 }
 .event-seciton::before{
@@ -695,7 +695,6 @@ select {
     margin-left: 2.5rem;
 }
 .event-seciton .event-text-box .left a{
-    transform: translateY(-16px);
     font-size: 1.875rem;
     color: #fff;
     font-weight: 400;
@@ -741,7 +740,7 @@ select {
 
 /*7번 sns*/
 .sns-section{
-    background: url('/layout/img/sns-bg-img.jpg') no-repeat center / cover;
+    background: url('/layout/img/sns-bg-img.jpg') no-repeat center/cover fixed;
     position: relative;
     z-index: 1;
 }
