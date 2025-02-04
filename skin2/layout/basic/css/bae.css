@@ -793,7 +793,7 @@ select {
 /*푸터*/
 .xans-element-.xans-layout.xans-layout-footer .utilMenu{
     display: flex;
-    padding: 3.75rem 0 1.25rem;
+    padding: 1.25rem 0;
     border-bottom: solid 1px #949494;
     height: auto;
     line-height: 0;
@@ -830,21 +830,24 @@ select {
     margin: 0 auto;
     height: auto;
     width: 100%;
+    padding: 2.5rem 0;
 }
-#footer .inner .xans-layout-footer .foo-top{
+#footer .inner .xans-layout-footer .ft-info{
     display: flex;
     justify-content: space-between;
     padding: 1.25rem 0;
 }
-#footer .inner .xans-layout-footer .foo-top .address{
+#footer .inner .xans-layout-footer .ft-info .address{
+    display: flex;
+    flex-direction: column;
     padding: 0;
     color: #949494;
 }
-#footer .inner .xans-layout-footer .foo-top .address span{
+#footer .inner .xans-layout-footer .ft-info .address span{
     padding: 0 0.5rem 0 0;
     font-size: .875rem;
 }
-#footer .inner .xans-layout-footer .foo-top .hosting{
+#footer .inner .xans-layout-footer .ft-info .hosting{
     position: relative;
     top: 0;
 }
@@ -852,9 +855,12 @@ select {
     position: relative;
     height: auto;
     line-height: 1;
-    font-size: 0.75rem;
-    color: #949494;
-    margin-bottom: 3.75rem;
+    font-size: .75rem;
+    margin-top: 1.25rem;
+}
+#footer .inner .xans-layout-footer .portfolio-note{
+    font-size: .75rem;
+    margin-top: .75rem;
 }
 
 /*서브페이지*/
