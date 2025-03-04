@@ -2709,16 +2709,31 @@ select {
 }
 .df-login-action-item{
     line-height: 2;
-    background: #e5e5e5;
-    color: #000;
     transition: all .2s ease-in-out;
     padding: 1rem 0;
     font-size: 1rem;
     text-align: center;
+    border-radius: 12px;
 }
-.df-login-action-item:hover{
+.df-login-action-item_login,
+.df-login-action-item_guestlogin{
+    border: solid 1px #000;
     background: #000;
     color: #fff;
+}
+.df-login-action-item_login:hover,
+.df-login-action-item_guestlogin:hover{
+    border: solid 1px #e5e5e5;
+    background: #e5e5e5;
+    color: #000;
+}
+.df-login-action-item_guestorder{
+    border: solid 1px #e5e5e5;
+    background: transparent;
+    color: #000;
+}
+.df-login-action-item_guestorder:hover{
+    background: #e5e5e5;
 }
 .df-login-info{
     margin-top: 3rem;
