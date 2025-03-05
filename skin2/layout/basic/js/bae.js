@@ -100,13 +100,16 @@ $(function(){
 })
 
 var main_banner_swiper = new Swiper(".main-banner-swiper", {
-    // autoplay: {
-    //     delay: 3000
-    // },
+    autoplay: {
+        delay: 3000
+    },
     loop: true
 });
 
 var best_swiper = new Swiper(".best-swiper", {
+    autoplay: {
+        delay: 3000
+    },
     slidesPerView: 4,
     spaceBetween: 40,
     scrollbar: {
@@ -116,9 +119,9 @@ var best_swiper = new Swiper(".best-swiper", {
 });
 
 var middle_swiper = new Swiper(".middle-banner-swiper", {
-    //  autoplay: {
-    //      delay: 3000
-    // },
+    autoplay: {
+        delay: 3000
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -127,6 +130,9 @@ var middle_swiper = new Swiper(".middle-banner-swiper", {
 });
 
 var new_swiper = new Swiper(".new-swiper", {
+    autoplay: {
+        delay: 3000
+    },
     slidesPerView: 3,
     spaceBetween: 40,
     slidesPerGroup: 3,
