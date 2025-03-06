@@ -195,4 +195,18 @@ document.addEventListener('DOMContentLoaded', function() {
             discountRateElement.textContent = `${discountRate.toFixed(0)}%`;
         }
     });
+    // tr 요소 중 class가 "captcha"인 요소 찾기
+    var captchaRow = document.querySelector('tr.captcha');
+
+    if (captchaRow) {  // captchaRow가 존재하는지 확인
+        // td 요소 중 두 번째 img 태그 선택
+        var images = captchaRow.querySelectorAll('td img');
+        
+        if (images.length > 1) {  // 두 번째 이미지가 존재하는지 확인
+            var secondImage = images[1];
+
+            // img의 src 속성 변경
+            secondImage.src = '/layout/img/icon/reload-icon.svg';
+        }
+    }
 });
