@@ -108,15 +108,20 @@ var main_banner_swiper = new Swiper(".main-banner-swiper", {
 
 var best_swiper = new Swiper(".best-swiper", {
     autoplay: {
-        delay: 3000
+        delay: 3000,
+        disableOnInteraction: false,
     },
     slidesPerView: 4,
     spaceBetween: 40,
     scrollbar: {
         el: ".swiper-scrollbar",
     },
-    loop: true
+    loop: true,
+    autoplay: false
 });
+setTimeout(function() {
+    best_swiper.autoplay.start();
+}, 3000);
 
 var middle_swiper = new Swiper(".middle-banner-swiper", {
     autoplay: {
