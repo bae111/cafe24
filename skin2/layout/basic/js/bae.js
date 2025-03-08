@@ -149,9 +149,14 @@ var new_swiper = new Swiper(".new-swiper", {
 });
 
 var order_best_swiper = new Swiper(".order-best-swiper", {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     slidesPerView: 6,
     spaceBetween: 40,
-    loop: true
+    loop: true,
+    autoplay: false
 });
 
 document.addEventListener('DOMContentLoaded', function() {
