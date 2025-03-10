@@ -119,24 +119,24 @@ var best_swiper = new Swiper(".best-swiper", {
     loop: true,
     autoplay: false
 });
-setTimeout(function() {
-    best_swiper.autoplay.start();
-}, 3000);
 
 var middle_swiper = new Swiper(".middle-banner-swiper", {
     autoplay: {
-        delay: 3000
+        delay: 3000,
+        disableOnInteraction: false,
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    loop: true
+    loop: true,
+    autoplay: false
 });
 
 var new_swiper = new Swiper(".new-swiper", {
     autoplay: {
-        delay: 3000
+        delay: 3000,
+        disableOnInteraction: false,
     },
     slidesPerView: 3,
     spaceBetween: 40,
@@ -146,6 +146,7 @@ var new_swiper = new Swiper(".new-swiper", {
         prevEl: ".swiper-button-prev",
     },
     loop: true,
+    autoplay: false
 });
 
 var order_best_swiper = new Swiper(".order-best-swiper", {
@@ -157,6 +158,27 @@ var order_best_swiper = new Swiper(".order-best-swiper", {
     spaceBetween: 40,
     loop: true,
     autoplay: false
+});
+
+const swiperElements = document.querySelectorAll('.swiper');
+
+swiperElements.forEach((swiperElement) => {
+    const swiperInstance = swiperElement.swiper;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            if (swiperInstance && !swiperInstance.autoplay.running) {
+            swiperInstance.autoplay.start();
+            }
+            observer.unobserve(entry.target);
+        }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(swiperElement);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
