@@ -1096,7 +1096,7 @@ select {
     font-size: 14px;
     color: #949494;
     display: flex;
-    gap: 1rem;
+    gap: .6rem;
     align-items: center;
 }
 #orderB .ec-base-step .step li:not(:last-child)::after{
@@ -1350,10 +1350,14 @@ select {
 }
 #orderB .xans-element-.xans-order.xans-order-totalsummary.ec-base-table.typeList.gBorder.total .center td .box strong span{
     font-size: 1.25rem;
+    letter-spacing: 0;
 }
-#orderB .xans-element-.xans-order.xans-order-totalsummary.ec-base-table.typeList.gBorder.total .center td .box.txtEm.txt16 strong{
+#orderB .xans-element-.xans-order.xans-order-totalsummary.ec-base-table.typeList.gBorder.total .center td .box strong{
     color: #000;
     font-size: 1.25rem;
+}
+#orderB .xans-element-.xans-order.xans-order-totalsummary.ec-base-table.typeList.gBorder.total .center td .box > .txt23{
+    margin-right: 2px;
 }
 /*관심상품*/
 #orderB .xans-element-.xans-myshop.xans-myshop-wishlist.ec-base-table.typeList.xans-record- table{
@@ -1414,7 +1418,6 @@ select {
     color: #949494;
     font-size: .75rem;
     display: flex;
-    align-items: center;
     gap: .5rem;
     padding: 0;
 }
@@ -1425,6 +1428,7 @@ select {
     height: 4px;
     background: #949494;
     border-radius: 50%;
+    margin-top: .5rem;
 }
 /*베스트 상품 슬라이드*/
 #orderB .ec-base-product{
