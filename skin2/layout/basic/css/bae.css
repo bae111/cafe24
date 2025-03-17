@@ -436,6 +436,7 @@ select {
     float: none;
     display: flex;
     justify-content: end;
+    margin: 0;
 }
 .ec-base-product .prdList .thumbnail .prdImg {
     position: static;
@@ -734,7 +735,7 @@ select {
     align-items: center;
 }
 .new-swiper .swiper-wrapper .thumbnail .prdImg a img{
-    /* max-width: 300px; */
+    max-width: 350px;
     transform: scale(0.8);
 }
 
