@@ -3486,12 +3486,12 @@ div.app-smart-popup{
 }
 .app-smart-popup .app-smart-popup-slider-dots li.app-smart-popup-slider-active button {
     width: 21px !important;
-    background-color: white !important;
+    background-color: #fff !important;
 }
 .app-smart-popup .app-smart-popup-slider-dots li button {
     width: 6px !important;
     height: 6px !important;
-    background-color: #80817e !important;
+    background-color: #000 !important;
     border-radius: 10px !important;
 }
 .app-smart-popup .smart-popup-btns{
@@ -3499,6 +3499,7 @@ div.app-smart-popup{
 }
 .app-smart-popup .smart-popup-btns button.smart-popup-close{
     border-left: solid 1px #f5f5f5 !important;
+    transition: all .3s ease-in-out;
 }
 .app-smart-popup .smart-popup-btns button:first-child{
     border: none !important;
