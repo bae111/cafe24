@@ -3042,6 +3042,9 @@ select {
     color: #000;
     font-size: 0.875rem;
 }
+.listP .ec-base-table.typeList.gBorder tbody td:hover a{
+    text-decoration: underline;
+}
 .listP .ec-base-table.typeList.gBorder tbody td.subject a font,
 .listP .ec-base-table.typeList.gBorder tbody td.subject span.txtEm{
     color: #000;
